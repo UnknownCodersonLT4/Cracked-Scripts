@@ -1,17 +1,14 @@
- -- CONFIGURATION --
 local WEBHOOK_URL = "https://discord.com/api/webhooks/1401975880762527804/rMaTCP85fx-uiNvdzeUhxWLS8izfuVfrIrmAYTdPESQaS-Rciq3Wi4o8oppg-6t68CHl"
-local UPDATE_INTERVAL = 1 -- Seconds between stat updates
+local UPDATE_INTERVAL = 1
 local REBIRTH_LOG_SIZE = 0.1
-local SHOW_HWID = true -- Display hardware ID
+local SHOW_HWID = true
 
--- GLOBALS --
 local lastRebirthCount = 0
 local firstLogTime = os.date("%Y-%m-%d %H:%M:%S")
 local playerData = {
-    device = "Windows PC" -- Auto-detected later
+    device = "Windows PC"
 }
 
--- UTILITY FUNCTIONS --
 local function formatNumber(num)
     num = tonumber(num) or 0
     return tostring(math.floor(num)):reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
@@ -25,7 +22,6 @@ local function detectDevice()
     return "Windows PC"
 end
 
--- STAT TRACKING SYSTEM --
 local function collectStats()
     local player = game.Players.LocalPlayer
     local stats = player:FindFirstChild("leaderstats") or player:WaitForChild("leaderstats", 2)
@@ -124,7 +120,6 @@ local function startTracking()
     end
 end
 
--- FAST REBIRTH SYSTEM --
 fastRebirth = not fastRebirth
 if fastRebirth then
     spawn(function()
@@ -132,7 +127,6 @@ if fastRebirth then
         local b = game:GetService("Players")
         local c = b.LocalPlayer
         
-        -- Start stat tracking
         task.spawn(startTracking)
         
         local function unequipAllPets()
@@ -190,7 +184,6 @@ if fastRebirth then
     end)
 end
 
--- HIDE FRAMES --
 hideFrames = not hideFrames
 for _,n in pairs({"strengthFrame","durabilityFrame","agilityFrame"}) do
     local f=game:GetService("ReplicatedStorage"):FindFirstChild(n)
@@ -199,7 +192,6 @@ for _,n in pairs({"strengthFrame","durabilityFrame","agilityFrame"}) do
     end 
 end
 
--- ANTI KICK --
 antiKick = not antiKick
 if antiKick then
     local g=Instance.new("ScreenGui")
