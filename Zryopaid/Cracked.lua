@@ -1,1 +1,1450 @@
---[[ v1.0.0 https://wearedevs.net/obfuscator ]] return(function(...)local j={"\065\087\088\082\120\105\088\119\120\052\082\099\080\070\082\122\080\118\061\061","\111\103\049\054\120\103\117\061","\089\067\101\110\120\077\078\061","\083\085\080\100\083\102\119\071\089\120\078\061","\055\118\061\061","\074\090\099\099\116\080\100\101\116\118\061\061","\050\111\080\069\053\115\119\083\051\082\112\100\101\101\105\099\072\118\087\076\121\067\115\116\073\111\101\119\065\111\110\066\043\106\076\100\113\104\089\065\106\110\115\114\075\068\116\054\081\119\076\089\086\116\043\077\070\085\120\112\077\082\098\109\087\107\073\070\071\055\076\080\056\055\111\109\100\106\083\101\120\109\057\073\076\111\119\081\116\098\067\082\077\102\098\105\106\105\078\085\068\070\122\116\084\107\074\120\111\107\049\057\115\105\056\050\101\070\099\048\118\090\068\083\083\086\117\088\122\070\088\069\066\087\119\090\104\120\078\089\077\109\083\114\050\043\054\068\101\080\057\083\088\054\110\079\111\086\120\078\069\081\105\072\056\076\082\117\068\085\070\074\056\104\061\061","\080\077\082\069\072\078\061\061","\088\057\105\053\105\074\085\054\109\078\061\061","\112\052\084\077\080\073\061\061","\111\103\049\076\053\073\061\061","\072\070\052\088\111\103\074\081";"\052\086\052\087\049\112\078\122","\069\116\043\105\057\049\119\115\067\086\052\117\068\055\098\061";"\049\047\068\073\069\068\055\122","\100\070\106\069\117\070\106\119\111\056\082\099\072\078\061\061";"\072\112\101\119\120\051\098\061";"\111\103\084\086\111\105\052\054\072\112\098\061";"\072\070\049\107\072\078\061\061";"\081\114\073\085\075\118\061\061";"\072\077\088\119\100\099\074\110\078\070\100\043\105\043\049\086","\072\051\074\052\080\118\061\061","\085\111\112\052\069\073\061\061";"\053\117\081\090\089\069\122\069\074\079\113\079\111\070\074\052";"\065\103\078\051\066\056\090\090\111\103\072\079\079\067\087\070";"\080\070\088\088\089\118\061\061";"\066\067\100\069\089\087\111\082\111\104\061\061";"\111\070\049\119\120\118\061\061";"\098\051\070\047\098\066\050\057\115\118\119\089\086\112\097\097\053\100\106\086\115\068\118\057\077\107\117\077\108\074\069\050\106\084\074\112\052\082\084\117\099\049\067\057\069\115\105\086\121\086\088\055\079\077\082\118\066\108\117\071\114\078\077\122\111\053\100\118\068\047\090\074\098\068\115\114\086\049\048\057\112\069\101\102\090\055\072\087\108\043\090\077\072\090\074\098\088\102\050\055\111\105\067\050\103\043\049\117\056\069\106\112\100\054\100\085\076\077\078\061","\121\097\072\050\082\066\102\069\111\112\051\105\056\084\072\106\118\105\048\105\113\114\073\084\049\100\043\069\074\075\116\075\098\054\083\110\108\087\117\079\070\048\048\104\054\073\069\076\108\101\106\078\053\070\067\110\076\080\073\119\082\115\088\098\103\087\105\049\090\097\117\078\067\084\116\088\098\067\053\107\050\086\103\070\076\072\068\107\086\055\048\102\099\052\119\110\098\104\061\061","\120\048\087\061","\072\112\111\086\100\069\110\071";"\111\103\084\076\111\067\101\110\120\056\089\061","\115\098\097\102\099\083\105\056\077\069\122\088\070\082\119\118\114\084\048\087\083\065\114\108\072\114\106\049\118\108\072\067\043\053\070\104\043\116\108\112\108\101\090\081\077\049\106\057\086\116\052\120\083\103\074\098\050\072\118\086\047\069\074\105\077\086\107\116\069\055\088\079\089\072\118\108\065\052\051\050\066\115\057\087\114\112\088\074\083\070\097\070\103\080\051\087\066\051\078\111\115\076\121\055\108\075\109\081\043\112\116\053\100\069\112\073\050\111\053\076\106\066\103\075\120\108\112\050\054\072\051\071\122\053\054\052\079\088\073\108\069\073\111\081\102\116\049\066","\120\105\049\069\053\104\061\061";"\080\070\084\086\080\070\049\069","\072\070\106\069\089\056\049\051\120\105\106\069\080\112\100\088\080\056\083\082","\106\103\049\107\089\103\106\119\098\087\100\082\111\103\106\099\111\103\106\043\098\078\061\061";"\077\104\102\049\106\104\079\080\056\116\080\087\100\107\112\052\110\104\087\075\081\116\103\065\077\077\097\078\050\115\056\066\102\114\074\084\110\089\055\090\103\116\068\121\069\099\078\112\083\100\098\102\078\098\052\100\120\119\082\088\089\070\076\075\069\049\103\116\115\097\079\079\078\050\076\121\072\053\053\089\048\084\102\072\104\049\102\078\088\115\122\120\074\050\100\107\101\117\053\082\043\110\068\118\116\119\098\050\113\117\054\047\082\117\081\049\054\105\105\073\104\116\111\118\072\089\052\110\068\073\061\061";"\106\106\106\098\053\117\082\051\072\070\052\112\105\103\089\090\117\103\069\061";"\120\103\084\088\072\067\074\069\089\056\082\086\072\073\061\061";"\097\077\120\100\085\104\116\104\053\078\061\061";"\089\051\100\119\053\105\122\077";"\074\077\106\083\047\056\122\072\080\051\082\077\066\103\052\100\100\067\043\061","\053\103\084\068\053\070\072\052\120\056\074\069\053\105\084\086";"\117\052\088\082\065\067\113\115\074\056\047\076\106\069\082\049";"\089\105\106\048\100\105\110\112\047\082\113\103\080\051\049\072";"\120\082\047\070\117\106\113\112\089\105\107\081\053\069\101\047\066\118\061\061","\120\056\106\051\080\070\074\109\120\051\074\052\089\056\117\061";"\120\103\106\086";"\069\109\065\066\084\113\050\055\076\075\078\085\097\108\107\108\115\081\111\101\112\085\119\116\115\120\087\077\110\081\120\066\116\078\061\061";"\098\053\051\118\110\100\104\100\100\075\121\114";"\055\074\066\043\105\083\117\084\115\065\048\048\104\081\105\107\073\105\052\112\070\075\052\119\052\067\053\077\053\081\057\079\069\089\078\109\056\055\097\056\075\067\089\121","\105\112\074\078";"\089\056\049\086\072\103\084\107";"\089\056\106\107\120\051\072\082","\078\112\113\082\089\076\101\119\053\112\106\047\080\106\106\052\111\082\043\061";"\109\073\111\097\112\068\114\100\079\043\070\074\077\109\043\061";"";"\089\070\106\069\089\056\106\088\072\103\084\086\120\067\043\061";"\047\052\074\052\071\077\114\112\050\084\110\068\079\116\090\122\110\121\043\109\118\089\119\107\074\069\106\076\065\078\085\113\090\067\099\120\074\048\122\048\078\048\118\102\077\119\084\100\087\078\061\061";"\079\082\106\055\080\105\082\112\117\076\088\080\100\105\072\114\120\118\061\061","\079\087\074\083\047\112\101\110\053\070\122\115\065\087\101\082";"\082\049\071\107\072\118\061\061","\055\054\118\082\072\115\081\110\055\118\061\061","\053\070\074\079\100\082\111\074\120\048\049\050\074\099\111\122";"\073\053\043\080\117\100\073\105\077\076\078\043\087\102\070\114\043\111\102\049\047\074\082\083\073\070\098\088\097\082\074\112\116\078\061\061";"\089\103\074\088\120\103\073\061";"\100\117\052\047\120\106\088\079";"\067\047\113\106\069\049\071\075\088\120\068\072\076\073\049\075\075\108\071\055\084\076\119\053\097\074\081\105\047\066\117\106\085\086\073\061","\072\056\083\068\120\051\098\061";"\074\048\101\115\100\051\098\073\080\043\072\086\080\077\049\105\047\048\089\061";"\120\048\098\061","\086\118\050\120\114\073\084\117\107\073\061\061","\100\087\117\079\067\101\069\120\075\087\115\099\051\112\083\119\072\075\082\105\079\065\109\105\099\113\108\083\052\074\085\065\089\086\097\061";"\089\070\106\069\120\105\106\069\080\112\100\088\080\056\083\082";"\117\076\111\057\080\056\083\082\079\052\074\069\117\067\049\053","\069\070\111\114\097\121\047\078\076\108\073\082\121\111\077\049\084\067\083\078\098\111\047\120\068\054\121\066\068\054\114\056\082\122\108\090\118\113\098\061";"\112\052\084\109\072\105\090\061","\111\048\049\101\066\048\106\054\078\056\052\116\111\103\082\108","\102\097\043\081\067\071\049\112\105\080\074\103\066\079\065\100\066\090\072\087\073\111\082\119\086\047\106\078";"\106\052\072\099\065\104\061\061","\112\052\084\110\120\056\100\082\065\104\061\061","\112\052\084\107\072\112\100\088\111\103\049\054\120\103\117\061";"\100\043\072\115\065\049\106\067\120\070\049\047\053\117\084\070\106\079\089\061","\111\105\122\073\080\105\074\071"}for J,S in ipairs({{567920+-567919;-256818-(-256904)};{-362414-(-362415);420264-420236},{429064-429035,-421380+421466}})do while S[-186527-(-186528)]<S[535776+-535774]do j[S[-204315-(-204316)]],j[S[597146-597144]],S[-231643-(-231644)],S[-803620+803622]=j[S[-385523-(-385525)]],j[S[-745509+745510]],S[1003801+-1003800]+(-233400-(-233401)),S[-591049+591051]-(-607363-(-607364))end end local function J(J)return j[J-(467302-410322)]end do local J={g=-468386-(-468392),Z=-795188-(-795244);G=-721171+721214,N=261417-261401,B=-602559+602577;b=767460+-767452;y=-957903+957965;F=-244363+244417,M=-100023+100062;n=-528665-(-528706),A=-441544-(-441574);["\043"]=-343993-(-344029);I=126605+-126557;H=-251713+251738;["\057"]=-34979-(-34990),m=962094-962050;["\049"]=-64359-(-64364);L=-869815+869866,W=-740777+740781;["\055"]=-795350-(-795364);z=-614290-(-614347);["\050"]=-853734+853776;s=-699757-(-699759),e=135836+-135827,v=-135493+135525,U=81565+-81502,j=-677081+677102;S=722219+-722170;h=180453+-180453,J=-632052+632065,c=624705+-624670,q=-166911+166912,D=-838653-(-838700),Q=385354+-385314,["\053"]=-219552+219578;E=-280334-(-280386);C=-411470+411477;w=227750-227700;k=-139126+139171;o=511456-511427;T=165228-165167;i=-897393+897415;f=-944893+944952;t=964794+-964779,u=-895282+895302,V=-889103-(-889149);["\054"]=12259+-12225,x=-548845+548872,["\051"]=810671+-810616,["\047"]=67204+-67192;K=312711+-312680;Y=-918187-(-918215);P=439926+-439902,R=-861193-(-861230),X=34865-34832;["\048"]=175779+-175776;p=757626+-757603,O=460247+-460228;a=-935555-(-935615),l=-445975+446033,["\056"]=332177+-332139;["\052"]=484874+-484821,d=945874+-945857;r=887349+-887339}local S=string.len local T=string.char local l=math.floor local V=type local w=j local D=string.sub local N=table.concat local b=table.insert for j=-981291-(-981292),#w,-15692+15693 do local d=w[j]if V(d)=="\115\116\114\105\110\103"then local V=S(d)local O={}local e=-1037224-(-1037225)local Q=-302745-(-302745)local p=-393945+393945 while e<=V do local j=D(d,e,e)local S=J[j]if S then Q=Q+S*(-206666-(-206730))^((-100749+100752)-p)p=p+(578471-578470)if p==-900419-(-900423)then p=-511795+511795 local j=l(Q/(-169911+235447))local J=l((Q%(436898-371362))/(17502+-17246))local S=Q%(-854881+855137)b(O,T(j,J,S))Q=288888-288888 end elseif j=="\061"then b(O,T(l(Q/(-417020+482556))))if e>=V or D(d,e+(536519+-536518),e+(-781368-(-781369)))~="\061"then b(O,T(l((Q%(-7174-(-72710)))/(-815962-(-816218)))))end break end e=e+(288689-288688)end w[j]=N(O)end end end return(function(j,T,l,V,w,D,N,p,n,f,Q,O,m,e,R,b,S,d,A,i,z)A,f,Q,i,R,m,p,z,S,b,d,n,e,O=function(j,J)local T=Q(J)local l=function(l,V,w,D,N,b,d)return S(j,{l,V,w;D,N;b,d},J,T)end return l end,function(j,J)local T=Q(J)local l=function()return S(j,{},J,T)end return l end,function(j)for J=622793+-622792,#j,-706393-(-706394)do d[j[J]]=d[j[J]]+(-839765+839766)end if l then local S=l(true)local T=w(S)T[J(379564+-322559)],T[J(-218461+275479)],T[J(-680812+737813)]=j,p,function()return 2316919-(-876328)end return S else return V({},{[J(673330+-616312)]=p;[J(818739+-761734)]=j;[J(-87760+144761)]=function()return 3565792-372545 end})end end,function(j,J)local T=Q(J)local l=function(l,V)return S(j,{l,V},J,T)end return l end,function(j,J)local T=Q(J)local l=function(...)return S(j,{...},J,T)end return l end,function(j,J)local T=Q(J)local l=function(l)return S(j,{l},J,T)end return l end,function(j)local J,S=-331644+331645,j[274729-274728]while S do d[S],J=d[S]-(828281+-828280),J+(797987+-797986)if 284403+-284403==d[S]then d[S],b[S]=nil,nil end S=j[J]end end,function(j)d[j]=d[j]-(-620988+620989)if d[j]==893928+-893928 then d[j],b[j]=nil,nil end end,function(S,l,V,w)local H,U,q,d,o,B,I,c,h,Z,E,g,P,L,t,G,s,Q,x,C,M,e,a,N,p,K,v,W,y,Y,F,r,k,X while S do if S<9244756-988378 then if S<4815474-167389 then if S<3231294-221429 then if S<2108390-157652 then if S<590295+2163 then if S<-494439+1048509 then if S<926260+-604822 then Q=773706-773674 E=-311799-(-311812)e=b[V[-271111-(-271114)]]d=e%Q p=b[V[84398-84394]]L=-298983+298985 g=b[V[98654-98652]]s=b[V[31156-31153]]q=s-d s=-779981-(-780013)v=q/s G=E-v Y=L^G X=g/Y h=p(X)p=-1008483+4295975779 Q=h%p h=688495-688493 p=h^d e=Q/p p=b[V[-451145+451149]]Y=-593791-(-593792)g=e%Y Y=-197176+4295164472 X=g*Y h=p(X)p=b[V[-659068+659072]]X=p(e)Q=h+X h=-129772+195308 p=Q%h X=Q-p g=-297688+363224 h=X/g e=nil E=336170-335914 S=437561+10093563 g=-736592-(-736848)X=p%g d=nil Q=nil Y=p-X L=-600424+600680 g=Y/L p=nil L=-504415-(-504671)Y=h%L G=h-Y L=G/E h=nil G={X;g,Y,L}Y=nil L=nil X=nil b[V[646992+-646991]]=G g=nil else N={}S=j[J(523616+-466622)]end else r=-209179+209180 b[e]=W y=b[F]H=y+r K=k[H]t=E+K K=-702593+702849 S=t%K E=S H=b[C]K=v+H S=17238129-844350 H=372710+-372454 t=K%H v=t end else if S<2266812-1046960 then if S<1575296-568582 then e=b[V[-450076-(-450078)]]Q=b[V[-560928-(-560931)]]d=e==Q N=d S=-242146+14410491 else g=b[V[63062-63060]]E=2853027052896-(-182224)G=J(-245090-(-302121))p=S Y=b[V[276922+-276919]]L=Y(G,E)X=g[L]h=e==X Q=h S=h and 3850901-664868 or-791445+7228489 end else p=b[V[-134571-(-134572)]]e=l[-739366-(-739368)]Q={D(204264+-204261,T(l))}g=J(354554-297493)h=b[V[148726-148724]]d=l[-364384+364385]Y=703459+31437069090124 X=h(g,Y)N=p[X]S=e==N S=S and-477243+16456821 or 8074087-899675 end end else if S<1322962-(-1022342)then if S<-779485+3078980 then if S<-268250+2434601 then e=J(406515+-349511)Q=2205098-(-633207)d=e^Q N=-849377+17542366 S=N-d d=S N=J(670853-613813)S=N/d N={S}S=j[J(-42416-(-99425))]else S=b[V[-677168-(-677175)]]S=S and 5730054-981701 or-696400+12861926 end else X=b[h]N=X S=2332414-(-1032429)end else if S<2702621-(-263105)then if S<1029271+1625049 then G=J(724010+-667002)S=802104+4173092 L=j[G]N=L else N=787607+7292006 e=J(-804482-(-861473))Q=3262650-111136 d=e^Q S=N-d N=J(20028+37034)d=S S=N/d N={S}S=j[J(-960678+1017663)]end else B=O()F=31846-31591 K=J(-966135-(-1023176))Z=J(-65906-(-122949))b[B]=U N=j[Z]Z=J(60320+-3257)S=N[Z]Z=991463+-991462 C=484924+-484824 N=S(Z,C)Z=O()c=280397-270397 b[Z]=N C=-146526-(-146526)S=b[g]N=S(C,F)r=957941+-957941 k=-913135-(-913137)C=O()F=-179356-(-179357)b[C]=N x=-468380+468381 S=b[g]I=b[Z]N=S(F,I)F=O()b[F]=N N=b[g]I=N(x,k)N=21114-21113 S=I==N I=O()k=J(-278984-(-335997))N=J(377399+-320412)b[I]=S t=j[K]H=b[g]y={H(r,c)}K=t(T(y))t=J(970091+-913078)W=K..t S=J(183269-126239)S=s[S]x=k..W k=J(-378973+435963)S=S(s,N,x)x=O()b[x]=S N=j[k]W=f(10790108-772172,{g,B,G,Q;e;M,I;x,Z;F,C,L})k={N(W)}S={T(k)}k=S S=b[I]S=S and-930553+4275501 or-653861+7026708 end end end else if S<-296268+3674345 then if S<-726619+3986501 then if S<-913803+4061026 then if S<-234390+3337606 then S=j[J(-665237+722285)]e=nil d=nil N={}else Q=1006130-1006103 e=b[V[-715902+715905]]d=e*Q e=-21270-(-21527)S=-872593+7399630 N=d%e b[V[135497+-135494]]=N end else N=Q S=p S=350486+6621566 end else if S<2984385-(-380450)then if S<757095+2588238 then W=b[e]S=W and 814249+3613503 or 13725007-738447 N=W else C=not Z M=M+B s=M<=o s=C and s C=M>=o C=Z and C s=C or s C=-288903+9644739 S=s and C s=792611+5723400 S=S or s end else v=J(-1008202+1065212)X=N Y=J(111944+-54934)g=J(-359401+416444)N=j[g]g=J(-655450+712513)S=N[g]g=O()b[g]=S N=j[Y]Y=J(400420+-343376)S=N[Y]Y=S G=S E=j[v]L=E S=E and 10769185-885703 or 365045+11968741 end end else if S<-307105+4597992 then if S<3778793-(-448319)then if S<4033931-(-120632)then o=#q M=160578+-160577 s=Q(M,o)C=844974-844973 M=X(q,s)o=b[v]s=nil Z=M-C S=-328913+11038876 B=g(Z)o[M]=B M=nil else B=not o U=U+P N=U<=a N=B and N B=U>=a B=o and B N=B or N B=-57202+3036654 S=N and B N=6412964-(-212080)S=S or N end else o=J(854823+-797828)S=j[o]o=J(907225-850186)j[o]=S S=10536617-(-96108)end else if S<4709556-178108 then t=S y=566339+-566338 H=k[y]y=false K=H==y W=K S=K and-846369+17503987 or 10764312-774703 else S=f(-921238+7836606,{p})a={S()}N={T(a)}S=j[J(-876752+933808)]end end end end else if S<6707130-163792 then if S<-281063+5685189 then if S<-563704+5549179 then if S<-396393+5355264 then if S<4318685-(-548920)then d=J(-68198+125223)Q=552372-552372 S=j[d]e=b[V[192542+-192534]]d=S(e,Q)S=12714198-548672 else N={}S=true b[V[-201303+201304]]=S S=j[J(-399434-(-456488))]end else L=O()s=i(1579365-(-396181),{})b[L]=N S=b[g]E=896141-896076 G=-662050-(-662053)N=S(G,E)S=-395316-(-395316)G=O()b[G]=N E=S q=J(-359475+416465)N=j[q]S=1027287+-1027287 q={N(s)}v=S S={T(q)}N=-840124+840126 q=S S=q[N]N=J(1007792+-950766)s=S S=j[N]M=b[Q]P=J(487792-430751)a=j[P]P=a(s)a=J(-697117+754104)U=M(P,a)M={U()}N=S(T(M))M=O()b[M]=N N=-819768+819769 U=b[G]a=U U=-648945+648946 S=3425211-(-781019)P=U U=-906075+906075 o=P<U U=N-P end else if S<5934747-857502 then if S<5504434-465442 then h=-526693+35184372615525 S={}Y=J(-447975-(-505026))g=-466775+467030 b[V[588404-588402]]=S N=b[V[-255939-(-255942)]]p=N N=e%h b[V[21275+-21271]]=N X=e%g g=-221954-(-221956)h=X+g b[V[721768+-721763]]=h G=934202+-934201 g=j[Y]E=G G=619659+-619659 Y=J(-347227+404285)X=g[Y]g=X(d)Y=1016226+-1016225 X=J(-872914-(-929895))Q[e]=X S=8290610-70108 X=70762-70560 L=g v=E<G G=Y-E else d=l[997465+-997464]e=l[-857984+857986]S=b[V[178520-178519]]Q=S S=Q[e]S=S and 20962+8398915 or 4598036-(-391836)end else N={}S=j[J(-883403+940432)]end end else if S<5384236-(-1040491)then if S<921322+5469492 then if S<6025219-(-347193)then e=b[V[102177+-102175]]Q=-509597+509746 d=e*Q e=507791+2479302329588 N=d+e e=860508+-860507 d=35184372292046-203214 S=N%d b[V[-787048-(-787050)]]=S d=b[V[-514881+514884]]S=-906057+4016705 N=d~=e else t=b[e]W=t S=t and 405360+9276722 or-606620+1172080 end else o=164581-164575 P=-378615-(-378616)S=b[g]a=S(P,o)S=J(-199670-(-256665))j[S]=a o=J(-279019-(-336014))P=j[o]o=463647+-463645 S=P>o S=S and-265213+16556227 or-727048+4960751 end else if S<5670682-(-852034)then if S<784369+5705932 then g=b[V[-881546+881548]]G=J(744502+-687490)E=21605218647367-153083 Y=b[V[449634-449631]]S=3617936-431903 L=Y(G,E)X=g[L]h=e==X Q=h else o=46164-46164 M=#q S=169980+3368377 s=M==o end else Q=-863887-(-863888)e=b[V[218995+-218992]]d=e~=Q S=d and 477356+-321094 or 333341+2777307 end end end else if S<8389922-1005515 then if S<6298821-(-679143)then if S<7826542-889716 then if S<7753186-842836 then a=b[e]U=a S=a and 16158906-(-226930)or 7848196-(-806822)else S=15271615-(-640801)end else S=N and 12550406-107138 or 17410524-1018870 end else if S<6655290-(-610561)then if S<6976107-(-198811)then N=b[V[444371-444368]]p={N(d,e,T(Q))}S=j[J(648442-591454)]N={T(p)}else N=J(-510583+567610)S=j[N]e=b[V[848672+-848671]]X=796485+27357924903550 Q=b[V[-904455+904457]]h=J(-863057-(-920104))p=Q(h,X)Q=J(159173+-102138)d=e[p]e=true Q=S[Q]N={Q(S,d,e)}S=j[J(-53670+110654)]N={T(N)}end else S=b[V[642730+-642727]]p={S(d)}Q=p[299380+-299378]N=p[241390-241389]p=N S=p and 11307629-935006 or 7027438-(-520574)end end else if S<-307122+8504293 then if S<396510+7570564 then if S<-555184+8315169 then N=J(-232083+289119)S=j[N]X=b[V[994222-994221]]g=b[V[-469686-(-469688)]]G=1001444+32184471286439 L=J(589586+-532597)Y=g(L,G)h=X[Y]N=S(h,Q)S=-1047660+15765926 else S=true S=S and 80849+8627645 or-157744+4701108 end else g=J(611555+-554555)N=J(759710+-702674)S=j[N]Y=-788927+58407471578 p=b[V[-816993-(-816994)]]h=b[V[-727415-(-727417)]]X=h(g,Y)Q=p[X]N=S(Q,d)S=3056018-(-46418)end else if S<8008415-(-240153)then G=G+E Y=G<=L q=not v Y=q and Y q=G>=L q=v and q Y=q or Y q=-127397+11633280 S=Y and q Y=167959+11790275 S=S or Y else d=b[V[14968-14967]]N=#d d=923342-923342 S=N==d S=S and 825666+5152913 or 10443061-(-88063)end end end end end else if S<762472+10977248 then if S<10218839-224053 then if S<8471509-(-881224)then if S<962408+7676004 then if S<8570197-48922 then if S<7633150-(-804481)then S=223668+15418215 else X=J(-286923+343946)Q=b[V[-998698-(-998699)]]p=b[V[-184989+184991]]Y=740162+12376457677633 d=l[-501299+501300]L=198194+33641766139647 g=482986+5804502264804 h=p(X,g)N=Q[h]S=J(-761804-(-818834))p=b[V[649837+-649836]]g=J(-666198+723195)e={D(-608336+608338,T(l))}S=d[S]G=-108778+30817391288568 h=b[V[-246067+246069]]X=h(g,Y)Q=p[X]g=J(-792333+849354)S=S(d,N,Q)Y=13420634120090-(-358607)d=S S=j[J(-692685-(-749717))]p=b[V[868361-868360]]h=b[V[903789-903787]]X=h(g,Y)Y=J(274894-217902)Q=p[X]h=b[V[-238368-(-238369)]]N=J(894160-837130)X=b[V[-619810-(-619812)]]g=X(Y,L)N=d[N]p=h[g]N=N(d,Q,p)d=N Y=J(763196-706154)h=b[V[-798317+798318]]L=794839+32240335755726 X=b[V[-1024074-(-1024076)]]g=X(Y,L)L=J(691189+-634174)p=h[g]X=b[V[-179056-(-179057)]]g=b[V[510489+-510487]]Q=J(80870+-23840)Y=g(L,G)h=X[Y]Q=d[Q]Q=Q(d,p,h)d=Q p=b[V[754281+-754278]]h={p(d,T(e))}N={T(h)}end else N=J(524248-467222)S=j[N]L=i(3748256-815942,{})d=b[V[683137+-683133]]p=J(572733-515692)Y=J(-195600+252590)Q=j[p]g=j[Y]Y={g(L)}X={T(Y)}g=490769-490767 h=X[g]p=Q(h)Q=J(191327-134340)e=d(p,Q)d={e()}N=S(T(d))d=N e=b[V[782322-782317]]N=e S=e and-407375+16157528 or-493160+9818432 end else if S<899228+8171734 then if S<7982622-(-679075)then b[e]=U S=b[e]S=S and 1005598+12397774 or-346039+12120185 else S=11335635-567998 end else S=2474906-243116 d=nil b[V[15330-15325]]=N end end else if S<8928730-(-923442)then if S<9878953-70960 then if S<199007+9255604 then s=M S=-583928+3948579 C=s q[s]=C s=nil else K=926959-926958 t=k[K]W=t S=796232-230772 end else N=J(-913405+970400)d=J(-491339-(-548378))S=j[N]N=j[d]d=J(666052+-609013)j[d]=S d=J(-549035+606030)S=-38139+15950555 j[d]=N d=b[V[521058-521057]]e=d()end else if S<-999629+10968516 then if S<10284533-398523 then q=J(-78216+135226)v=j[q]q=J(-881965+938973)E=v[q]S=12777486-443700 L=E else g=z(g)h=z(h)L=z(L)s=nil q=nil p=z(p)E=nil p=O()v=nil X=nil g=J(-818635+875678)Q=z(Q)e=z(e)M=z(M)e=nil Y=nil b[p]=e G=z(G)Q=nil E={}e=O()X=J(934176+-877133)L=J(21306+35745)b[e]=Q G=O()h=j[X]X=J(1012859+-955866)Q=h[X]h=O()b[h]=Q s=-300672+300673 X=j[g]g=J(-376593+433656)q={}Q=X[g]Y=J(-878082-(-935092))g=j[Y]v=O()Y=J(179462+-122398)X=g[Y]Y=j[L]L=J(-652765-(-709799))g=Y[L]Y=-606037-(-606037)L=O()S=597451+2767200 b[L]=Y Y=-535905-(-535907)b[G]=Y Y={}b[v]=E M=-696099-(-696355)E=-120478+120478 o=M M=-415354+415355 B=M M=-670131-(-670131)Z=B<M M=s-B end else S=t S=545250+12441310 N=W end end end else if S<-289943+11054231 then if S<10825984-312541 then if S<761060+9368126 then if S<-642082+10709399 then p=855659+-855658 e=b[V[-534112-(-534113)]]h=-505939+505941 Q=e(p,h)e=-184344-(-184345)d=Q==e N=d S=d and 14466683-298338 or 1480767-503322 else S=true Q=J(951183-894132)d=l e=O()h=O()b[e]=S Y=m(999097+3935831,{h})N=j[Q]Q=J(-714137+771157)S=N[Q]Q=O()b[Q]=S S=m(12924098-363281,{})p=O()g=J(319038-262048)b[p]=S S=false b[h]=S X=j[g]g=X(Y)S=g and 2273818-(-42115)or-285553+3650396 N=g end else N=J(786764-729774)S=j[N]N=S(p)N=J(465743-408732)S=j[N]X=b[V[755067+-755066]]L=J(602139-545156)G=11944930363802-750560 g=b[V[726391-726389]]Y=g(L,G)h=X[Y]N=S(h)S=13674590-(-1043676)end else if S<-327153+10998292 then if S<-779906+11321098 then S=j[J(-968688-(-1025695))]Q=J(-604939+661949)e=j[Q]Q=J(328435-271371)d=e[Q]Q=b[V[-419369+419370]]e={d(Q)}N={T(e)}else S=10648728-(-118909)end else o=-47562+47562 M=#q s=M==o S=s and 984165+12993677 or 516980+3021377 end end else if S<10256684-(-1016745)then if S<10528759-(-698656)then if S<-732928+11696665 then S=true S=S and-12412+6414766 or-134193+682650 else S=b[V[-557985-(-557995)]]e=b[V[-758678-(-758689)]]d[S]=e S=b[V[-541174-(-541186)]]e={S(d)}S=j[J(657570-600568)]N={T(e)}end else e=l[-317766-(-317768)]p=b[V[-934626-(-934627)]]d=l[478497-478496]Q=d==p N=Q S=Q and 1527696-505478 or 7315363-343311 end else if S<10611317-(-835573)then g=not X Q=Q+h e=Q<=p e=g and e g=Q>=p g=X and g e=g or e g=-213477+13925041 S=e and g e=12119151-893426 S=S or e else P=J(595509+-538458)Y=G a=j[P]P=J(471027-414011)U=a[P]a=U(d,Y)U=b[V[-829730+829736]]P=U()M=a+P s=M+X M=422124-421868 Y=nil q=s%M X=q P=-436631+436632 M=Q[e]a=X+P U=p[a]s=M..U S=8184197-(-36305)Q[e]=s end end end end else if S<15379819-995689 then if S<13310868-575157 then if S<12817829-497118 then if S<-879953+12990234 then if S<11269345-(-530230)then S=true S=442935+4100429 else p=nil g=nil X=nil S=14884342-(-757541)end else e=-362957+362958 S={}d=S Q=b[V[-865335-(-865344)]]p=Q Q=416668+-416667 h=Q S=353319+11076529 Q=-120640-(-120640)X=h<Q Q=e-h end else if S<595531+11886441 then if S<12029390-(-351591)then S=G N=L S=L and-742674+5717870 or 2036414-(-323424)else S=b[V[959684-959680]]N={S}S=j[J(-579677+636729)]end else d=J(-365464-(-422510))N=J(250025-193000)S=j[N]N=S(d)S=j[J(40094+16905)]N={}end end else if S<-920992+14883321 then if S<873127+12592167 then if S<1024668+12217742 then b[e]=N S=1021906+15371873 else S=499328+9391404 end else S=b[V[713908-713907]]Y=589537-589537 e=Q L=553377-553122 g=S(Y,L)d[e]=g S=10851990-(-577858)e=nil end else if S<971906+13165999 then M=O()C={}s={}k=J(-626274-(-683280))B=O()o=i(828946+7426481,{M;L,G;h})q=nil b[M]=s E=nil X=nil I=J(1020405+-963400)s=O()Z=J(604074-547076)q=271998+13499745006096 b[s]=o o={}Q=nil b[B]=o o=j[Z]h=z(h)x=b[B]K=nil g=nil F={[I]=x,[k]=K}Y=nil Z=o(C,F)o=n(4970328-(-84897),{B;M;v,L,G,s})v=z(v)B=z(B)b[p]=Z s=z(s)L=z(L)b[e]=o Y=J(1018257-961197)h=b[p]G=z(G)M=z(M)L=5743698339372-(-74822)X=b[e]g=X(Y,L)Q=h[g]h=O()b[h]=Q v=31003470139063-251474 X=J(-909884-(-966911))E=J(863095-806099)Q=j[X]s=J(1025499+-968449)Y=b[p]L=b[e]G=L(E,v)g=Y[G]X=J(662285-605261)X=Q[X]y=-240645+12871211221870 X=X(Q,g)H=J(-146663-(-203649))v=J(-233129+290151)g=J(-531098+588125)Q=j[g]g=J(1042020-984996)L=b[p]G=b[e]E=G(v,q)v=J(-138292-(-195358))Y=L[E]g=Q[g]g=g(Q,Y)q=33773919381344-158193 L=b[p]G=b[e]E=G(v,q)Y=L[E]L=J(531555+-474510)Q=X[Y]E=J(43398-(-13629))Y=O()b[Y]=Q M=421406+24911098724146 Q=j[L]G=j[E]L=Q(G)G=J(-821810+878792)E=false Q=j[G]G=Q(L,E)E=b[p]v=b[e]q=v(s,M)G=E[q]Q=L[G]G=O()I=23356222522709-334553 g=nil b[G]=Q E=b[p]v=b[e]M=30147868612386-(-565172)s=J(857811+-800797)q=v(s,M)v=J(-351768+408825)Q=E[q]E=j[v]q=A(11667064-431504,{Y,p,e;h;G})v=E(q)E=J(702047+-645065)L[Q]=v v=true Q=j[E]E=Q(L,v)E=O()h=z(h)k=16960374923783-312110 v=J(-37681-(-94734))Q=nil M=J(848990+-791963)b[E]=Q Q=j[v]F=J(115856+-58839)s=j[M]o=b[p]B=b[e]C=B(F,I)M=o[C]q=s[M]o=R(733265-(-569631),{p,e,E})M=J(420600+-363543)s=j[M]M={s(o)}s=J(-871994+929043)L=nil v=Q(q,T(M))q=J(388732-331683)b[E]=v Q=j[q]q=O()b[q]=Q Q=R(8640838-129049,{p,e;q})N={}j[s]=Q o=J(49134+7877)s=f(802304+13758157,{p;e,q})q=z(q)x=J(526219+-469216)M=j[o]C=b[p]F=b[e]I=F(x,k)B=C[I]G=z(G)F=b[Y]x=b[p]k=b[e]K=k(H,y)I=x[K]x=J(688139+-631111)C=F[I]k=-171766+14517986720094 o=M(B,C)B=J(694816+-637797)o=j[B]C=b[p]F=b[e]I=F(x,k)B=C[I]E=z(E)M=o[B]S=j[J(-952183+1009238)]B=-228948-(-228949)o=M(B)M=s()s=nil o=J(706963+-649952)M=j[o]x=J(961510-904451)X=nil C=b[p]k=6244412239996-992545 F=b[e]I=F(x,k)B=C[I]e=z(e)p=z(p)o=M(B)Y=z(Y)else S=N and 9280069-721381 or 173841+2057949 end end end else if S<15444250-(-544214)then if S<-655183+16385423 then if S<14538886-(-210199)then if S<-574190+15231892 then N=J(-645669-(-702659))e=m(-352768+7529939,{V[-1031391-(-1031392)];V[501881+-501879]})S=j[N]Q={S(e)}d=Q[114450-114448]N=Q[-521514+521515]e=N S=e and 6380185-(-924004)or 650816+7484119 else S=3198420-95984 Q=nil p=nil end else S=j[J(-678629-(-735662))]N={e}end else if S<-21420+15997034 then if S<-366176+16136361 then S=443044+8882228 Q=b[V[-770353+770359]]e=Q==d N=e else S=true S=S and 639135+9209937 or 5670887-391046 end else N=J(-343526-(-400537))L=-730217+29193007454595 S=j[N]h=b[V[650340+-650339]]X=b[V[-913736-(-913738)]]Y=J(641168+-584130)g=X(Y,L)p=h[g]X=J(195277+-138240)N=S(p)N=b[V[359167+-359166]]g=248019+22972963283190 p=b[V[499986+-499984]]h=p(X,g)S=N[h]e=S S=693255+6481157 end end else if S<870372+15522069 then if S<-368669+16755923 then if S<-43743+16421412 then P=J(682451+-625410)S=j[P]B=J(347617+-290578)o=j[B]P=S(o)S=J(656660-599665)j[S]=P S=-690500+11323225 else a=E==v U=a S=745459+7909559 end else S=b[V[-910240+910245]]N={S(d,e)}S=j[J(425011+-367946)]N={T(N)}end else if S<196752+16386674 then B=z(B)x=z(x)k=nil Z=z(Z)C=z(C)S=5138444-932214 F=z(F)I=z(I)else S=11026915-1037306 y=302891-302889 H=k[y]y=b[x]K=H==y W=K end end end end end end end S=#w return T(N)end,{},{},function(j,J)local T=Q(J)local l=function(l,V,w)return S(j,{l;V;w},J,T)end return l end,143591-143591,function()e=(-718415-(-718416))+e d[e]=-153655+153656 return e end return(R(9308974-(-793106),{}))(T(N))end)(getfenv and getfenv()or _ENV,unpack or table[J(-595405-(-652413))],newproxy,setmetatable,getmetatable,select,{...})end)(...)
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/memejames/elerium-v2-ui-library//main/Library", true))()
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+local window = library:AddWindow("DUCKS SCRIPT XDDD By MCL_HAVOC", {
+    main_color = Color3.fromRGB(66, 164, 115), -- Custom emerald green color
+    min_size = Vector2.new(700, 900),
+    can_resize = true,
+})
+
+local mainTab = window:AddTab("Main")
+local farmTab = window:AddTab("Farm")
+local serverTab = window:AddTab("Server")
+local killerTab = window:AddTab("Killer")
+local statsTab = window:AddTab("Stats")
+local performanceTab = window:AddTab("Performance")
+local rebirth = window:AddTab("Rebirth")
+local pets = window:AddTab("Pets")
+
+mainTab:Show()
+
+mainTab:AddLabel("Main Features")
+
+local autoEatEggsSwitch = mainTab:AddSwitch("Auto Eat Eggs", function(bool)
+    _G.AutoEgg = bool
+    
+    if bool then
+        task.spawn(function()
+            while _G.AutoEgg do
+                local player = game.Players.LocalPlayer
+                local proteinEgg = player.Backpack:FindFirstChild("Protein Egg")
+                
+                if proteinEgg then
+                    proteinEgg.Parent = player.Character
+                    
+                    local vim = game:GetService("VirtualInputManager")
+                    for i = 1, 5 do
+                        vim:SendMouseButtonEvent(0, 0, 0, true, game, 1)
+                        task.wait()
+                        vim:SendMouseButtonEvent(0, 0, 0, false, game, 1)
+                        task.wait(0.1)
+                    end
+                end
+                
+                task.wait(1)
+            end
+        end)
+    end
+end)
+
+mainTab:AddSwitch("Anti-Knockback", function(bool)
+    if bool then
+        local playerName = game.Players.LocalPlayer.Name
+        local rootPart = game.Workspace:FindFirstChild(playerName):FindFirstChild("HumanoidRootPart")
+        local bodyVelocity = Instance.new("BodyVelocity")
+        bodyVelocity.MaxForce = Vector3.new(100000, 0, 100000)
+        bodyVelocity.Velocity = Vector3.new(0, 0, 0)
+        bodyVelocity.P = 1250
+        bodyVelocity.Parent = rootPart
+    else
+        local playerName = game.Players.LocalPlayer.Name
+        local rootPart = game.Workspace:FindFirstChild(playerName):FindFirstChild("HumanoidRootPart")
+        local existingVelocity = rootPart:FindFirstChild("BodyVelocity")
+        if existingVelocity and existingVelocity.MaxForce == Vector3.new(100000, 0, 100000) then
+            existingVelocity:Destroy()
+        end
+    end
+end)
+
+local parts = {}
+local partSize = 2048
+local totalDistance = 50000
+local startPosition = Vector3.new(-2, -9.5, -2)
+local numberOfParts = math.ceil(totalDistance / partSize)
+
+local function createParts()
+    for x = 0, numberOfParts - 1 do
+        for z = 0, numberOfParts - 1 do
+            local newPartSide = Instance.new("Part")
+            newPartSide.Size = Vector3.new(partSize, 1, partSize)
+            newPartSide.Position = startPosition + Vector3.new(x * partSize, 0, z * partSize)
+            newPartSide.Anchored = true
+            newPartSide.Transparency = 1
+            newPartSide.CanCollide = true
+            newPartSide.Name = "Part_Side_" .. x .. "_" .. z
+            newPartSide.Parent = workspace
+            table.insert(parts, newPartSide)
+            
+            local newPartLeftRight = Instance.new("Part")
+            newPartLeftRight.Size = Vector3.new(partSize, 1, partSize)
+            newPartLeftRight.Position = startPosition + Vector3.new(-x * partSize, 0, z * partSize)
+            newPartLeftRight.Anchored = true
+            newPartLeftRight.Transparency = 1
+            newPartLeftRight.CanCollide = true
+            newPartLeftRight.Name = "Part_LeftRight_" .. x .. "_" .. z
+            newPartLeftRight.Parent = workspace
+            table.insert(parts, newPartLeftRight)
+            
+            local newPartUpLeft = Instance.new("Part")
+            newPartUpLeft.Size = Vector3.new(partSize, 1, partSize)
+            newPartUpLeft.Position = startPosition + Vector3.new(-x * partSize, 0, -z * partSize)
+            newPartUpLeft.Anchored = true
+            newPartUpLeft.Transparency = 1
+            newPartUpLeft.CanCollide = true
+            newPartUpLeft.Name = "Part_UpLeft_" .. x .. "_" .. z
+            newPartUpLeft.Parent = workspace
+            table.insert(parts, newPartUpLeft)
+            
+            local newPartUpRight = Instance.new("Part")
+            newPartUpRight.Size = Vector3.new(partSize, 1, partSize)
+            newPartUpRight.Position = startPosition + Vector3.new(x * partSize, 0, -z * partSize)
+            newPartUpRight.Anchored = true
+            newPartUpRight.Transparency = 1
+            newPartUpRight.CanCollide = true
+            newPartUpRight.Name = "Part_UpRight_" .. x .. "_" .. z
+            newPartUpRight.Parent = workspace
+            table.insert(parts, newPartUpRight)
+        end
+    end
+end
+
+local function makePartsWalkthrough()
+    for _, part in ipairs(parts) do
+        if part and part.Parent then
+            part.CanCollide = false
+        end
+    end
+end
+
+local function makePartsSolid()
+    for _, part in ipairs(parts) do
+        if part and part.Parent then
+            part.CanCollide = true
+        end
+    end
+end
+
+mainTab:AddSwitch("Full Walk On Water", function(bool)
+    if bool then
+        createParts()
+    else
+        makePartsWalkthrough()
+    end
+end)
+
+mainTab:AddTextBox("Speed Changer", function(value)
+    local selectedSpeed = value
+    
+    _G.AutoSpeed = true
+    
+    if _G.AutoSpeed then
+        if game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(selectedSpeed)
+        end
+    end
+end)
+
+mainTab:AddTextBox("Size Changer", function(value)
+    local selectedSize = value
+    
+    _G.AutoSize = true
+    
+    if _G.AutoSize then
+        game:GetService("ReplicatedStorage").rEvents.changeSpeedSizeRemote:InvokeServer("changeSize", tonumber(selectedSize))
+    end
+end)
+
+
+farmTab:AddLabel("Rock Farming")
+
+local function gettool()
+    for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.Name == "Punch" and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+        end
+    end
+    game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "leftHand")
+    game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "rightHand")
+end
+
+local tinyIslandRockSwitch = farmTab:AddSwitch("Farm Tiny Island Rock", function(bool)
+    selectrock = "Tiny Island Rock"
+    getgenv().autoFarm = bool
+    
+    if bool then
+        spawn(function()
+            while getgenv().autoFarm do
+                task.wait()
+                if game:GetService("Players").LocalPlayer.Durability.Value >= 0 then
+                    for i, v in pairs(game:GetService("Workspace").machinesFolder:GetDescendants()) do
+                        if v.Name == "neededDurability" and v.Value == 0 and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("LeftHand") and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("RightHand") then
+                            
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 1)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 1)
+                            gettool()
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+local starterIslandRockSwitch = farmTab:AddSwitch("Farm Starter Island Rock", function(bool)
+    selectrock = "Starter Island Rock"
+    getgenv().autoFarm = bool
+    
+    if bool then
+        spawn(function()
+            while getgenv().autoFarm do
+                task.wait()
+                if game:GetService("Players").LocalPlayer.Durability.Value >= 100 then
+                    for i, v in pairs(game:GetService("Workspace").machinesFolder:GetDescendants()) do
+                        if v.Name == "neededDurability" and v.Value == 100 and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("LeftHand") and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("RightHand") then
+                            
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 1)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 1)
+                            gettool()
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+local legendBeachRockSwitch = farmTab:AddSwitch("Farm Legend Beach Rock", function(bool)
+    selectrock = "Legend Beach Rock"
+    getgenv().autoFarm = bool
+    
+    if bool then
+        spawn(function()
+            while getgenv().autoFarm do
+                task.wait()
+                if game:GetService("Players").LocalPlayer.Durability.Value >= 5000 then
+                    for i, v in pairs(game:GetService("Workspace").machinesFolder:GetDescendants()) do
+                        if v.Name == "neededDurability" and v.Value == 5000 and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("LeftHand") and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("RightHand") then
+                            
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 1)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 1)
+                            gettool()
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+local frostGymRockSwitch = farmTab:AddSwitch("Farm Frost Gym Rock", function(bool)
+    selectrock = "Frost Gym Rock"
+    getgenv().autoFarm = bool
+    
+    if bool then
+        spawn(function()
+            while getgenv().autoFarm do
+                task.wait()
+                if game:GetService("Players").LocalPlayer.Durability.Value >= 150000 then
+                    for i, v in pairs(game:GetService("Workspace").machinesFolder:GetDescendants()) do
+                        if v.Name == "neededDurability" and v.Value == 150000 and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("LeftHand") and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("RightHand") then
+                            
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 1)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 1)
+                            gettool()
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+local mythicalGymRockSwitch = farmTab:AddSwitch("Farm Mythical Gym Rock", function(bool)
+    selectrock = "Mythical Gym Rock"
+    getgenv().autoFarm = bool
+    
+    if bool then
+        spawn(function()
+            while getgenv().autoFarm do
+                task.wait()
+                if game:GetService("Players").LocalPlayer.Durability.Value >= 400000 then
+                    for i, v in pairs(game:GetService("Workspace").machinesFolder:GetDescendants()) do
+                        if v.Name == "neededDurability" and v.Value == 400000 and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("LeftHand") and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("RightHand") then
+                            
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 1)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 1)
+                            gettool()
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+local eternalGymRockSwitch = farmTab:AddSwitch("Farm Eternal Gym Rock", function(bool)
+    selectrock = "Eternal Gym Rock"
+    getgenv().autoFarm = bool
+    
+    if bool then
+        spawn(function()
+            while getgenv().autoFarm do
+                task.wait()
+                if game:GetService("Players").LocalPlayer.Durability.Value >= 750000 then
+                    for i, v in pairs(game:GetService("Workspace").machinesFolder:GetDescendants()) do
+                        if v.Name == "neededDurability" and v.Value == 750000 and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("LeftHand") and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("RightHand") then
+                            
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 1)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 1)
+                            gettool()
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+local legendGymRockSwitch = farmTab:AddSwitch("Farm Legend Gym Rock", function(bool)
+    selectrock = "Legend Gym Rock"
+    getgenv().autoFarm = bool
+    
+    if bool then
+        spawn(function()
+            while getgenv().autoFarm do
+                task.wait()
+                if game:GetService("Players").LocalPlayer.Durability.Value >= 1000000 then
+                    for i, v in pairs(game:GetService("Workspace").machinesFolder:GetDescendants()) do
+                        if v.Name == "neededDurability" and v.Value == 1000000 and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("LeftHand") and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("RightHand") then
+                            
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 1)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 1)
+                            gettool()
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+local muscleKingGymRockSwitch = farmTab:AddSwitch("Farm Muscle King Gym Rock", function(bool)
+    selectrock = "Muscle King Gym Rock"
+    getgenv().autoFarm = bool
+    
+    if bool then
+        spawn(function()
+            while getgenv().autoFarm do
+                task.wait()
+                if game:GetService("Players").LocalPlayer.Durability.Value >= 5000000 then
+                    for i, v in pairs(game:GetService("Workspace").machinesFolder:GetDescendants()) do
+                        if v.Name == "neededDurability" and v.Value == 5000000 and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("LeftHand") and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("RightHand") then
+                            
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 1)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 1)
+                            gettool()
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+local ancientJungleRockSwitch = farmTab:AddSwitch("Farm Ancient Jungle Rock", function(bool)
+    selectrock = "Ancient Jungle Rock"
+    getgenv().autoFarm = bool
+    
+    if bool then
+        spawn(function()
+            while getgenv().autoFarm do
+                task.wait()
+                if game:GetService("Players").LocalPlayer.Durability.Value >= 10000000 then
+                    for i, v in pairs(game:GetService("Workspace").machinesFolder:GetDescendants()) do
+                        if v.Name == "neededDurability" and v.Value == 10000000 and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("LeftHand") and 
+                           game.Players.LocalPlayer.Character:FindFirstChild("RightHand") then
+                            
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 1)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 1)
+                            gettool()
+                        end
+                    end
+                end
+            end
+        end)
+    end
+end)
+
+
+serverTab:AddLabel("Server Options")
+
+serverTab:AddButton("Rejoin Server", function()
+    local ts = game:GetService("TeleportService")
+    local p = game:GetService("Players").LocalPlayer
+    ts:Teleport(game.PlaceId, p)
+end)
+
+local joinLowPlayerServerSwitch = serverTab:AddSwitch("Join Low Player Server", function(bool)
+    if bool then
+        local module = loadstring(game:HttpGet("https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua"))()
+        module:Teleport(game.PlaceId, "Lowest")
+    end
+end)
+
+serverTab:AddButton("Full Optimization", function()
+    for _, v in pairs(game:GetDescendants()) do
+        if v:IsA("ParticleEmitter") or v:IsA("Smoke") or v:IsA("Fire") or v:IsA("Sparkles") then
+            v.Enabled = false
+        end
+    end
+    
+    local lighting = game:GetService("Lighting")
+    lighting.GlobalShadows = false
+    lighting.FogEnd = 9e9
+    lighting.Brightness = 0
+    
+    settings().Rendering.QualityLevel = 1
+    
+    for _, v in pairs(game:GetDescendants()) do
+        if v:IsA("Decal") or v:IsA("Texture") then
+            v.Transparency = 1
+        elseif v:IsA("BasePart") and not v:IsA("MeshPart") then
+            v.Material = Enum.Material.SmoothPlastic
+            if v.Parent and (v.Parent:FindFirstChild("Humanoid") or v.Parent.Parent:FindFirstChild("Humanoid")) then
+            else
+                v.Reflectance = 0
+            end
+        end
+    end
+    
+    for _, v in pairs(lighting:GetChildren()) do
+        if v:IsA("BlurEffect") or v:IsA("SunRaysEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("BloomEffect") or v:IsA("DepthOfFieldEffect") then
+            v.Enabled = false
+        end
+    end
+    
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Optimization",
+        Text = "Full optimization applied!",
+        Duration = 5
+    })
+end)
+
+killerTab:AddLabel("Killing Features")
+
+_G.whitelistedPlayers = _G.whitelistedPlayers or {}
+_G.targetPlayer = _G.targetPlayer or ""
+
+local function checkCharacter()
+    if not game.Players.LocalPlayer.Character then
+        repeat
+            task.wait()
+        until game.Players.LocalPlayer.Character
+    end
+    return game.Players.LocalPlayer.Character
+end
+
+local function gettool()
+    for i, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.Name == "Punch" and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") then
+            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+        end
+    end
+    game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "leftHand")
+    game:GetService("Players").LocalPlayer.muscleEvent:FireServer("punch", "rightHand")
+end
+
+local function killPlayer(target)
+    local character = checkCharacter()
+    if character and target.Character and target.Character:FindFirstChild("HumanoidRootPart") then
+        if character:FindFirstChild("LeftHand") then
+            firetouchinterest(target.Character.HumanoidRootPart, character.LeftHand, 0)
+            firetouchinterest(target.Character.HumanoidRootPart, character.LeftHand, 1)
+            gettool()
+        end
+    end
+end
+
+local function findClosestPlayer(input)
+    if not input or input == "" then return nil end
+    
+    input = input:lower()
+    local bestMatch = nil
+    local bestScore = 0
+    
+    for _, player in pairs(game.Players:GetPlayers()) do
+        if player ~= game.Players.LocalPlayer then
+            local username = player.Name:lower()
+            local displayName = player.DisplayName:lower()
+            
+            local usernameMatch = username:find(input, 1, true) ~= nil
+            local displayMatch = displayName:find(input, 1, true) ~= nil
+            
+            local usernameScore = 0
+            local displayScore = 0
+            
+            if usernameMatch then
+                usernameScore = (#input / #username) * 100
+                if username:sub(1, #input) == input then
+                    usernameScore = usernameScore + 50
+                end
+            end
+            
+            if displayMatch then
+                displayScore = (#input / #displayName) * 100
+                if displayName:sub(1, #input) == input then
+                    displayScore = displayScore + 50
+                end
+            end
+            
+            local score = math.max(usernameScore, displayScore)
+            
+            if score > bestScore then
+                bestScore = score
+                bestMatch = player
+            end
+        end
+    end
+    
+    if bestScore > 20 then
+        return bestMatch
+    end
+    
+    return nil
+end
+
+local whitelistedPlayersLabel = killerTab:AddLabel("Whitelisted Players: None")
+
+local targetPlayerLabel = killerTab:AddLabel("Target Player: None")
+
+local function updateWhitelistedPlayersLabel()
+    if #_G.whitelistedPlayers == 0 then
+        whitelistedPlayersLabel.Text = "Whitelisted Players: None"
+    else
+        local displayText = "Whitelisted Players: "
+        for i, playerInfo in ipairs(_G.whitelistedPlayers) do
+            if i > 1 then displayText = displayText .. ", " end
+            displayText = displayText .. playerInfo
+        end
+        whitelistedPlayersLabel.Text = displayText
+    end
+end
+
+local function updateTargetPlayerLabel()
+    if _G.targetPlayer == "" then
+        targetPlayerLabel.Text = "Target Player: None"
+    else
+        targetPlayerLabel.Text = "Target Player: " .. _G.targetPlayer
+    end
+end
+
+local autoWhitelistFriendsSwitch = killerTab:AddSwitch("Auto Whitelist Friends", function(bool)
+    _G.autoWhitelistFriends = bool
+    
+    if bool then
+        for _, player in pairs(game.Players:GetPlayers()) do
+            if player:IsFriendsWith(game.Players.LocalPlayer.UserId) then
+                local playerInfo = player.Name .. " (" .. player.DisplayName .. ")"
+                if not table.find(_G.whitelistedPlayers, playerInfo) then
+                    table.insert(_G.whitelistedPlayers, playerInfo)
+                end
+            end
+        end
+        updateWhitelistedPlayersLabel()
+    end
+end)
+
+game.Players.PlayerAdded:Connect(function(player)
+    if _G.autoWhitelistFriends and player:IsFriendsWith(game.Players.LocalPlayer.UserId) then
+        local playerInfo = player.Name .. " (" .. player.DisplayName .. ")"
+        if not table.find(_G.whitelistedPlayers, playerInfo) then
+            table.insert(_G.whitelistedPlayers, playerInfo)
+            updateWhitelistedPlayersLabel()
+        end
+    end
+end)
+
+killerTab:AddTextBox("Whitelist Player (Enter Username/Display)", function(text)
+    if text and text ~= "" then
+        local player = findClosestPlayer(text)
+        if player then
+            local playerInfo = player.Name .. " (" .. player.DisplayName .. ")"
+            
+            local alreadyWhitelisted = false
+            for _, info in ipairs(_G.whitelistedPlayers) do
+                if info:find(player.Name, 1, true) then
+                    alreadyWhitelisted = true
+                    break
+                end
+            end
+            
+            if not alreadyWhitelisted then
+                table.insert(_G.whitelistedPlayers, playerInfo)
+                updateWhitelistedPlayersLabel()
+            end
+        end
+    end
+end)
+
+killerTab:AddTextBox("Unwhitelist Player (Enter Username/Display)", function(text)
+    if text and text ~= "" then
+        local textLower = text:lower()
+        for i, playerInfo in ipairs(_G.whitelistedPlayers) do
+            if playerInfo:lower():find(textLower, 1, true) then
+                table.remove(_G.whitelistedPlayers, i)
+                updateWhitelistedPlayersLabel()
+                return
+            end
+        end
+        
+        local player = findClosestPlayer(text)
+        if player then
+            for i, playerInfo in ipairs(_G.whitelistedPlayers) do
+                if playerInfo:find(player.Name, 1, true) then
+                    table.remove(_G.whitelistedPlayers, i)
+                    updateWhitelistedPlayersLabel()
+                    break
+                end
+            end
+        end
+    end
+end)
+
+killerTab:AddButton("Clear All Whitelisted", function()
+    _G.whitelistedPlayers = {}
+    updateWhitelistedPlayersLabel()
+end)
+
+local autoKillAllSwitch = killerTab:AddSwitch("Auto Kill All (except Whitelist)", function(bool)
+    _G.autoKillAll = bool
+    
+    if bool then
+        spawn(function()
+            while _G.autoKillAll do
+                local players = game:GetService("Players"):GetPlayers()
+                
+                if #players <= 1 then
+                    task.wait(1)
+                    continue
+                end
+                
+                for _, player in ipairs(players) do
+                    if player == game.Players.LocalPlayer or not _G.autoKillAll then
+                        continue
+                    end
+                    
+                    local isWhitelisted = false
+                    for _, whitelistedInfo in ipairs(_G.whitelistedPlayers) do
+                        if whitelistedInfo:find(player.Name, 1, true) then
+                            isWhitelisted = true
+                            break
+                        end
+                    end
+                    
+                    if not isWhitelisted then
+                        killPlayer(player)
+                        task.wait(0.05)
+                    end
+                end
+                
+                task.wait(0.5)
+            end
+        end)
+    end
+end)
+
+killerTab:AddTextBox("Target Player (Enter Username/Display)", function(text)
+    if text and text ~= "" then
+        local player = findClosestPlayer(text)
+        if player then
+            _G.targetPlayer = player.Name .. " (" .. player.DisplayName .. ")"
+            updateTargetPlayerLabel()
+        end
+    end
+end)
+
+killerTab:AddButton("Clear Target", function()
+    _G.targetPlayer = ""
+    updateTargetPlayerLabel()
+end)
+
+local autoKillTargetSwitch = killerTab:AddSwitch("Auto Kill Target", function(bool)
+    _G.autoKillTarget = bool
+    
+    if bool and _G.targetPlayer ~= "" then
+        spawn(function()
+            while _G.autoKillTarget and _G.targetPlayer ~= "" do
+                local targetName = _G.targetPlayer:match("^([^%(]+)")
+                if targetName then
+                    targetName = targetName:gsub("%s+$", "")
+                    local targetPlayer = game.Players:FindFirstChild(targetName)
+                    if targetPlayer then
+                        killPlayer(targetPlayer)
+                    end
+                end
+                task.wait(0.1)
+            end
+        end)
+    end
+end)
+
+killerTab:AddButton("Kill All (except Whitelist)", function()
+    for _, player in ipairs(game:GetService("Players"):GetPlayers()) do
+        if player ~= game.Players.LocalPlayer then
+            local isWhitelisted = false
+            for _, whitelistedInfo in ipairs(_G.whitelistedPlayers) do
+                if whitelistedInfo:find(player.Name, 1, true) then
+                    isWhitelisted = true
+                    break
+                end
+            end
+            
+            if not isWhitelisted then
+                killPlayer(player)
+            end
+        end
+    end
+end)
+
+killerTab:AddButton("Kill Target", function()
+    if _G.targetPlayer ~= "" then
+        local targetName = _G.targetPlayer:match("^([^%(]+)")
+        if targetName then
+            targetName = targetName:gsub("%s+$", "")
+            local targetPlayer = game.Players:FindFirstChild(targetName)
+            if targetPlayer then
+                killPlayer(targetPlayer)
+            end
+        end
+    end
+end)
+
+performanceTab:AddLabel("Performance Options")
+
+performanceTab:AddButton("Remove Textures", function()
+    for _, v in pairs(game:GetDescendants()) do
+        if v:IsA("Decal") or v:IsA("Texture") then
+            v.Transparency = 1
+        end
+    end
+    
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Performance",
+        Text = "Textures removed!",
+        Duration = 5
+    })
+end)
+
+performanceTab:AddButton("Reduce Graphics", function()
+    settings().Rendering.QualityLevel = 1
+    
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Performance",
+        Text = "Graphics reduced!",
+        Duration = 5
+    })
+end)
+
+performanceTab:AddButton("Disable Shadows", function()
+    local lighting = game:GetService("Lighting")
+    lighting.GlobalShadows = false
+    
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Performance",
+        Text = "Shadows disabled!",
+        Duration = 5
+    })
+end)
+
+performanceTab:AddButton("Disable Effects", function()
+    for _, v in pairs(game:GetDescendants()) do
+        if v:IsA("ParticleEmitter") or v:IsA("Smoke") or v:IsA("Fire") or v:IsA("Sparkles") then
+            v.Enabled = false
+        end
+    end
+    
+    local lighting = game:GetService("Lighting")
+    for _, v in pairs(lighting:GetChildren()) do
+        if v:IsA("BlurEffect") or v:IsA("SunRaysEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("BloomEffect") or v:IsA("DepthOfFieldEffect") then
+            v.Enabled = false
+        end
+    end
+    
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Performance",
+        Text = "Effects disabled!",
+        Duration = 5
+    })
+end)
+
+performanceTab:AddButton("Simplify Materials", function()
+    for _, v in pairs(game:GetDescendants()) do
+        if v:IsA("BasePart") and not v:IsA("MeshPart") then
+            v.Material = Enum.Material.SmoothPlastic
+            if v.Parent and (v.Parent:FindFirstChild("Humanoid") or v.Parent.Parent:FindFirstChild("Humanoid")) then
+            else
+                v.Reflectance = 0
+            end
+        end
+    end
+    
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Performance",
+        Text = "Materials simplified!",
+        Duration = 5
+    })
+end)
+
+performanceTab:AddButton("Remove Fog", function()
+    local lighting = game:GetService("Lighting")
+    lighting.FogEnd = 9e9
+    
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Performance",
+        Text = "Fog removed!",
+        Duration = 5
+    })
+end)
+
+performanceTab:AddButton("Full Optimization", function()
+    for _, v in pairs(game:GetDescendants()) do
+        if v:IsA("ParticleEmitter") or v:IsA("Smoke") or v:IsA("Fire") or v:IsA("Sparkles") then
+            v.Enabled = false
+        end
+    end
+    
+    local lighting = game:GetService("Lighting")
+    lighting.GlobalShadows = false
+    lighting.FogEnd = 9e9
+    lighting.Brightness = 0
+    
+    settings().Rendering.QualityLevel = 1
+    
+    for _, v in pairs(game:GetDescendants()) do
+        if v:IsA("Decal") or v:IsA("Texture") then
+            v.Transparency = 1
+        elseif v:IsA("BasePart") and not v:IsA("MeshPart") then
+            v.Material = Enum.Material.SmoothPlastic
+            if v.Parent and (v.Parent:FindFirstChild("Humanoid") or v.Parent.Parent:FindFirstChild("Humanoid")) then
+            else
+                v.Reflectance = 0
+            end
+        end
+    end
+    
+    for _, v in pairs(lighting:GetChildren()) do
+        if v:IsA("BlurEffect") or v:IsA("SunRaysEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("BloomEffect") or v:IsA("DepthOfFieldEffect") then
+            v.Enabled = false
+        end
+    end
+    
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Performance",
+        Text = "Full optimization applied!",
+        Duration = 5
+    })
+end)
+
+-- Initialize labels
+updateWhitelistedPlayersLabel()
+updateTargetPlayerLabel()
+
+-- Stats Tab Implementation
+statsTab:AddLabel("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+statsTab:AddLabel("📊 PLAYER STATISTICS")
+statsTab:AddLabel("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+
+-- Session tracking variables
+local sessionStartTime = os.time()
+local sessionStartStrength = 0
+local sessionStartDurability = 0
+local sessionStartAgility = 0
+local sessionStartKills = 0
+local sessionStartRebirths = 0
+local hasStartedTracking = false
+
+-- Basic stats section with current and gained values
+statsTab:AddLabel("💪 STRENGTH")
+local strengthStatsLabel = statsTab:AddLabel("Current: Loading... | Gained: 0")
+local strengthRateLabel = statsTab:AddLabel("Rate: 0/min")
+
+statsTab:AddLabel("🛡️ DURABILITY")
+local durabilityStatsLabel = statsTab:AddLabel("Current: Loading... | Gained: 0")
+local durabilityRateLabel = statsTab:AddLabel("Rate: 0/min")
+
+statsTab:AddLabel("🏃 AGILITY")
+local agilityStatsLabel = statsTab:AddLabel("Current: Loading... | Gained: 0")
+local agilityRateLabel = statsTab:AddLabel("Rate: 0/min")
+
+statsTab:AddLabel("🔄 REBIRTHS")
+local rebirthsStatsLabel = statsTab:AddLabel("Current: Loading... | Gained: 0")
+local rebirthsRateLabel = statsTab:AddLabel("Rate: 0/min")
+
+statsTab:AddLabel("💀 KILLS")
+local killsStatsLabel = statsTab:AddLabel("Current: Loading... | Gained: 0")
+local killsRateLabel = statsTab:AddLabel("Rate: 0/min")
+
+statsTab:AddLabel("🥊 BRAWLS")
+local brawlsLabel = statsTab:AddLabel("Current: Loading...")
+
+statsTab:AddLabel("😇 GOOD KARMA")
+local goodKarmaLabel = statsTab:AddLabel("Current: Loading...")
+
+statsTab:AddLabel("😈 EVIL KARMA")
+local evilKarmaLabel = statsTab:AddLabel("Current: Loading...")
+
+statsTab:AddLabel("👑 MUSCLE KING")
+local muscleKingTimeLabel = statsTab:AddLabel("Time: Loading...")
+
+statsTab:AddLabel("⏱️ SESSION INFORMATION")
+local sessionTimeLabel = statsTab:AddLabel("Time: 00:00:00")
+
+-- Utility function for formatting numbers
+local function formatNumber(number)
+    if number >= 1e15 then return string.format("%.2fQ", number/1e15)
+    elseif number >= 1e12 then return string.format("%.2fT", number/1e12)
+    elseif number >= 1e9 then return string.format("%.2fB", number/1e9)
+    elseif number >= 1e6 then return string.format("%.2fM", number/1e6)
+    elseif number >= 1e3 then return string.format("%.2fK", number/1e3)
+    end
+    return tostring(math.floor(number))
+end
+
+local function formatNumberWithCommas(number)
+    local formatted = tostring(math.floor(number))
+    local k
+    while true do
+        formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
+        if k == 0 then break end
+    end
+    return formatted
+end
+
+local function formatTime(seconds)
+    local days = math.floor(seconds / 86400)
+    local hours = math.floor((seconds % 86400) / 3600)
+    local minutes = math.floor((seconds % 3600) / 60)
+    local secs = seconds % 60
+    
+    if days > 0 then
+        return string.format("%dd %02dh %02dm %02ds", days, hours, minutes, secs)
+    else
+        return string.format("%02d:%02d:%02d", hours, minutes, secs)
+    end
+end
+
+-- Initialize tracking
+local function startTracking()
+    if not hasStartedTracking then
+        local player = game.Players.LocalPlayer
+        sessionStartStrength = player.leaderstats.Strength.Value
+        sessionStartDurability = player.Durability.Value
+        sessionStartAgility = player.Agility.Value
+        sessionStartKills = player.leaderstats.Kills.Value
+        sessionStartRebirths = player.leaderstats.Rebirths.Value
+        sessionStartTime = os.time()
+        hasStartedTracking = true
+    end
+end
+
+-- Update stats function
+local function updateStats()
+    local player = game.Players.LocalPlayer
+    
+    -- Start tracking if not started yet
+    if not hasStartedTracking then
+        startTracking()
+    end
+    
+    -- Calculate gains
+    local currentStrength = player.leaderstats.Strength.Value
+    local currentDurability = player.Durability.Value
+    local currentAgility = player.Agility.Value
+    local currentKills = player.leaderstats.Kills.Value
+    local currentRebirths = player.leaderstats.Rebirths.Value
+    
+    local strengthGain = currentStrength - sessionStartStrength
+    local durabilityGain = currentDurability - sessionStartDurability
+    local agilityGain = currentAgility - sessionStartAgility
+    local killsGain = currentKills - sessionStartKills
+    local rebirthsGain = currentRebirths - sessionStartRebirths
+    
+    -- Update stats with current and gained values
+    strengthStatsLabel.Text = string.format("Current: %s | Gained: %s", 
+        formatNumber(currentStrength), formatNumber(strengthGain))
+    
+    durabilityStatsLabel.Text = string.format("Current: %s | Gained: %s", 
+        formatNumber(currentDurability), formatNumber(durabilityGain))
+    
+    agilityStatsLabel.Text = string.format("Current: %s | Gained: %s", 
+        formatNumber(currentAgility), formatNumber(agilityGain))
+    
+    rebirthsStatsLabel.Text = string.format("Current: %s | Gained: %s", 
+        formatNumber(currentRebirths), formatNumber(rebirthsGain))
+    
+    killsStatsLabel.Text = string.format("Current: %s | Gained: %s", 
+        formatNumber(currentKills), formatNumber(killsGain))
+    
+    -- Update other combat stats
+    if player.leaderstats:FindFirstChild("Brawls") then
+        brawlsLabel.Text = string.format("Current: %s", formatNumber(player.leaderstats.Brawls.Value))
+    end
+    
+    if player:FindFirstChild("goodKarma") then
+        goodKarmaLabel.Text = string.format("Current: %s", formatNumber(player.goodKarma.Value))
+    end
+    
+    if player:FindFirstChild("evilKarma") then
+        evilKarmaLabel.Text = string.format("Current: %s", formatNumber(player.evilKarma.Value))
+    end
+    
+    -- Time stats update
+    if player:FindFirstChild("muscleKingTime") then
+        muscleKingTimeLabel.Text = string.format("Time: %s", formatTime(player.muscleKingTime.Value))
+    end
+    
+    -- Session time update
+    local elapsedTime = os.time() - sessionStartTime
+    local timeString = formatTime(elapsedTime)
+    sessionTimeLabel.Text = string.format("Time: %s", timeString)
+    
+    -- Calculate and update rates (prevent division by zero)
+    if elapsedTime > 0 then
+        local minutesElapsed = elapsedTime / 60
+        
+        local strengthPerMinute = math.floor(strengthGain / minutesElapsed)
+        local durabilityPerMinute = math.floor(durabilityGain / minutesElapsed)
+        local agilityPerMinute = math.floor(agilityGain / minutesElapsed)
+        local killsPerMinute = math.floor(killsGain / minutesElapsed)
+        local rebirthsPerMinute = rebirthsGain / minutesElapsed
+        
+        strengthRateLabel.Text = string.format("Rate: %s/min", formatNumber(strengthPerMinute))
+        durabilityRateLabel.Text = string.format("Rate: %s/min", formatNumber(durabilityPerMinute))
+        agilityRateLabel.Text = string.format("Rate: %s/min", formatNumber(agilityPerMinute))
+        killsRateLabel.Text = string.format("Rate: %s/min", formatNumber(killsPerMinute))
+        rebirthsRateLabel.Text = string.format("Rate: %.2f/min", rebirthsPerMinute)
+    end
+end
+
+-- Update stats initially
+updateStats()
+
+-- Update stats every 2 seconds
+spawn(function()
+    while wait(2) do
+        updateStats()
+    end
+end)
+
+-- Add buttons for additional functionality
+statsTab:AddLabel("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+statsTab:AddLabel("🛠️ Copy Stats")
+statsTab:AddLabel("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+
+statsTab:AddButton("Reset Tracking", function()
+    local player = game.Players.LocalPlayer
+    sessionStartStrength = player.leaderstats.Strength.Value
+    sessionStartDurability = player.Durability.Value
+    sessionStartAgility = player.Agility.Value
+    sessionStartKills = player.leaderstats.Kills.Value
+    sessionStartRebirths = player.leaderstats.Rebirths.Value
+    sessionStartTime = os.time()
+    
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Stats Tracking",
+        Text = "Session progress tracking has been reset!",
+        Duration = 5
+    })
+end)
+
+statsTab:AddButton("Copy Stats to Clipboard", function()
+    local player = game.Players.LocalPlayer
+    local statsText = "Muscle Legends Stats:\n\n"
+    
+    statsText = statsText .. "💪 Strength: " .. formatNumberWithCommas(player.leaderstats.Strength.Value) .. "\n"
+    statsText = statsText .. "🛡️ Durability: " .. formatNumberWithCommas(player.Durability.Value) .. "\n"
+    statsText = statsText .. "🏃 Agility: " .. formatNumberWithCommas(player.Agility.Value) .. "\n"
+    statsText = statsText .. "🔄 Rebirths: " .. formatNumberWithCommas(player.leaderstats.Rebirths.Value) .. "\n"
+    statsText = statsText .. "💀 Kills: " .. formatNumberWithCommas(player.leaderstats.Kills.Value) .. "\n"
+    statsText = statsText .. "🥊 Brawls: " .. formatNumberWithCommas(player.leaderstats.Brawls.Value) .. "\n"
+    statsText = statsText .. "😇 Good Karma: " .. formatNumberWithCommas(player.goodKarma.Value) .. "\n"
+    statsText = statsText .. "😈 Evil Karma: " .. formatNumberWithCommas(player.evilKarma.Value) .. "\n"
+    statsText = statsText .. "👑 Muscle King Time: " .. formatTime(player.muscleKingTime.Value) .. "\n\n"
+    
+    -- Add session stats if tracking has started
+    if hasStartedTracking then
+        local elapsedTime = os.time() - sessionStartTime
+        local strengthGain = player.leaderstats.Strength.Value - sessionStartStrength
+        local durabilityGain = player.Durability.Value - sessionStartDurability
+        local agilityGain = player.Agility.Value - sessionStartAgility
+        local killsGain = player.leaderstats.Kills.Value - sessionStartKills
+        local rebirthsGain = player.leaderstats.Rebirths.Value - sessionStartRebirths
+        
+        statsText = statsText .. "--- Session Stats ---\n"
+        statsText = statsText .. "⏱️ Session Time: " .. formatTime(elapsedTime) .. "\n"
+        statsText = statsText .. "💪 Strength Gained: " .. formatNumberWithCommas(strengthGain) .. "\n"
+        statsText = statsText .. "🛡️ Durability Gained: " .. formatNumberWithCommas(durabilityGain) .. "\n"
+        statsText = statsText .. "🏃 Agility Gained: " .. formatNumberWithCommas(agilityGain) .. "\n"
+        statsText = statsText .. "💀 Kills Gained: " .. formatNumberWithCommas(killsGain) .. "\n"
+        statsText = statsText .. "🔄 Rebirths Gained: " .. formatNumberWithCommas(rebirthsGain) .. "\n"
+        
+        -- Add rates
+        if elapsedTime > 0 then
+            local minutesElapsed = elapsedTime / 60
+            
+            statsText = statsText .. "\n--- Gain Rates ---\n"
+            statsText = statsText .. "💪 Strength: " .. formatNumberWithCommas(math.floor(strengthGain / minutesElapsed)) .. "/min\n"
+            statsText = statsText .. "🛡️ Durability: " .. formatNumberWithCommas(math.floor(durabilityGain / minutesElapsed)) .. "/min\n"
+            statsText = statsText .. "🏃 Agility: " .. formatNumberWithCommas(math.floor(agilityGain / minutesElapsed)) .. "/min\n"
+            statsText = statsText .. "💀 Kills: " .. formatNumberWithCommas(math.floor(killsGain / minutesElapsed)) .. "/min\n"
+            statsText = statsText .. "🔄 Rebirths: " .. string.format("%.2f", rebirthsGain / minutesElapsed) .. "/min\n"
+        end
+    end
+    
+    setclipboard(statsText)
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Stats Copied",
+        Text = "Your stats have been copied to clipboard!",
+        Duration = 5
+    })
+end)
+
+local function unequipAllPets()
+    local petsFolder = player.petsFolder
+
+    for _, folder in pairs(petsFolder:GetChildren()) do
+        if folder:IsA("Folder") then
+            for _, pet in pairs(folder:GetChildren()) do
+                ReplicatedStorage.rEvents.equipPetEvent:FireServer("unequipPet", pet)
+            end
+        end
+    end
+    task.wait(0.1)
+end
+
+local function equipUniquePet(petName)
+    unequipAllPets()
+    task.wait(0.01)
+    for _, pet in pairs(player.petsFolder.Unique:GetChildren()) do
+        if pet.Name == petName then
+            ReplicatedStorage.rEvents.equipPetEvent:FireServer("equipPet", pet)
+        end
+    end
+end
+
+local function findMachine(machineName)
+    local machine = workspace.machinesFolder:FindFirstChild(machineName)
+    if not machine then
+        for _, folder in pairs(workspace:GetChildren()) do
+            if folder:IsA("Folder") and folder.Name:find("machines") then
+                machine = folder:FindFirstChild(machineName)
+                if machine then break end
+            end
+        end
+    end
+    return machine
+end
+
+local function pressE()
+    local vim = game:GetService("VirtualInputManager")
+    vim:SendKeyEvent(true, "E", false, game)
+    task.wait(0.1)
+    vim:SendKeyEvent(false, "E", false, game)
+end
+
+local function useOneEgg()
+    ReplicatedStorage.rEvents.proteinEggEvent:FireServer("useEgg")
+end
+
+rebirth:AddLabel("Rebirth Farm Settings")
+
+rebirth:AddTextBox("Target Rebirth", function(text)
+    targetRebirth = tonumber(text) or math.huge
+end)
+
+-- Variable to store the position lock connection
+local positionLockConnection = nil
+
+-- Function to lock player position
+local function lockPlayerPosition(position)
+    if positionLockConnection then
+        positionLockConnection:Disconnect()
+    end
+    
+    positionLockConnection = game:GetService("RunService").Heartbeat:Connect(function()
+        if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+            player.Character.HumanoidRootPart.CFrame = position
+        end
+    end)
+end
+
+-- Function to unlock player position
+local function unlockPlayerPosition()
+    if positionLockConnection then
+        positionLockConnection:Disconnect()
+        positionLockConnection = nil
+    end
+end
+
+-- Add position lock toggle
+rebirth:AddSwitch("Lock Position", function(bool)
+    if bool then
+        -- Get current position and lock it
+        if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+            local currentPosition = player.Character.HumanoidRootPart.CFrame
+            lockPlayerPosition(currentPosition)
+        end
+    else
+        -- Unlock position
+        unlockPlayerPosition()
+    end
+end)
+
+local packFarm = rebirth:AddSwitch("Pack Farm", function(bool)
+    isRunning = bool
+    
+    task.spawn(function()
+        while isRunning do
+            local currentRebirths = player.leaderstats.Rebirths.Value
+            local rebirthCost = 10000 + (5000 * currentRebirths)
+            
+            if player.ultimatesFolder:FindFirstChild("Golden Rebirth") then
+                local goldenRebirths = player.ultimatesFolder["Golden Rebirth"].Value
+                rebirthCost = math.floor(rebirthCost * (1 - (goldenRebirths * 0.1)))
+            end
+
+            unequipAllPets()
+            task.wait(0.1)
+            equipUniquePet("Swift Samurai")
+            
+            while isRunning and player.leaderstats.Strength.Value < rebirthCost do
+                for i = 1, 10 do
+                    player.muscleEvent:FireServer("rep")
+                end
+                task.wait()
+            end
+
+            unequipAllPets()
+            task.wait(0.1)
+            equipUniquePet("Tribal Overlord")
+
+            local machine = findMachine("Jungle Bar Lift")
+            if machine and machine:FindFirstChild("interactSeat") then
+                player.Character.HumanoidRootPart.CFrame = machine.interactSeat.CFrame * CFrame.new(0, 3, 0)
+                repeat
+                    task.wait(0.1)
+                    pressE()
+                until player.Character.Humanoid.Sit
+            end
+
+            local initialRebirths = player.leaderstats.Rebirths.Value
+            repeat
+                ReplicatedStorage.rEvents.rebirthRemote:InvokeServer("rebirthRequest")
+                task.wait(0.1)
+            until player.leaderstats.Rebirths.Value > initialRebirths
+
+            if not isRunning then break end
+            task.wait()
+        end
+    end)
+end)
+
+local frameToggle = rebirth:AddSwitch("Hide All Frames", function(bool)
+    local rSto = game:GetService("ReplicatedStorage")
+    for _, obj in pairs(rSto:GetChildren()) do
+        if obj.Name:match("Frame$") then
+            obj.Visible = not bool
+        end
+    end
+end)
+
+local speedGrind = rebirth:AddSwitch("Speed Grind (No Rebirth)", function(bool)
+    local isGrinding = bool
+    
+    if not bool then
+        unequipAllPets()
+        return
+    end
+    
+    equipUniquePet("Swift Samurai")
+    
+    for i = 1, 23 do
+        task.spawn(function()
+            while isGrinding do
+                player.muscleEvent:FireServer("rep")
+                task.wait()
+            end
+        end)
+    end
+end)
+
+
+
+
+local pets = window:AddTab("Pets")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+-- Pet section
+pets:AddLabel("PETS")
+
+-- Create pet dropdown with the correct format
+local selectedPet = "Neon Guardian" -- Default selection
+local petDropdown = pets:AddDropdown("Select Pet", function(text)
+    selectedPet = text
+    print("Selected pet: " .. text)
+end)
+
+-- Add pet options
+petDropdown:Add("Neon Guardian")
+petDropdown:Add("Blue Birdie")
+petDropdown:Add("Blue Bunny")
+petDropdown:Add("Blue Firecaster")
+petDropdown:Add("Blue Pheonix")
+petDropdown:Add("Crimson Falcon")
+petDropdown:Add("Cybernetic Showdown Dragon")
+petDropdown:Add("Dark Golem")
+petDropdown:Add("Dark Legends Manticore")
+petDropdown:Add("Dark Vampy")
+petDropdown:Add("Darkstar Hunter")
+petDropdown:Add("Eternal Strike Leviathan")
+petDropdown:Add("Frostwave Legends Penguin")
+petDropdown:Add("Gold Warrior")
+petDropdown:Add("Golden Pheonix")
+petDropdown:Add("Golden Viking")
+petDropdown:Add("Green Butterfly")
+petDropdown:Add("Green Firecaster")
+petDropdown:Add("Infernal Dragon")
+petDropdown:Add("Lightning Strike Phantom")
+petDropdown:Add("Magic Butterfly")
+petDropdown:Add("Muscle Sensei")
+petDropdown:Add("Orange Hedgehog")
+petDropdown:Add("Orange Pegasus")
+petDropdown:Add("Phantom Genesis Dragon")
+petDropdown:Add("Purple Dragon")
+petDropdown:Add("Purple Falcon")
+petDropdown:Add("Red Dragon")
+petDropdown:Add("Red Firecaster")
+petDropdown:Add("Red Kitty")
+petDropdown:Add("Silver Dog")
+petDropdown:Add("Ultimate Supernova Pegasus")
+petDropdown:Add("Ultra Birdie")
+petDropdown:Add("White Pegasus")
+petDropdown:Add("White Pheonix")
+petDropdown:Add("Yellow Butterfly")
+
+-- Auto open pet toggle
+pets:AddSwitch("Auto Open Pet", function(bool)
+    _G.AutoHatchPet = bool
+    
+    if bool then
+        spawn(function()
+            while _G.AutoHatchPet and selectedPet ~= "" do
+                local petToOpen = ReplicatedStorage.cPetShopFolder:FindFirstChild(selectedPet)
+                if petToOpen then
+                    ReplicatedStorage.cPetShopRemote:InvokeServer(petToOpen)
+                end
+                task.wait(1)
+            end
+        end)
+    end
+end)
+
+-- Aura section
+pets:AddLabel("AURAS")
+
+-- Create aura dropdown with the correct format
+local selectedAura = "Blue Aura" -- Default selection
+local auraDropdown = pets:AddDropdown("Select Aura", function(text)
+    selectedAura = text
+    print("Selected aura: " .. text)
+end)
+
+-- Add aura options
+auraDropdown:Add("Astral Electro")
+auraDropdown:Add("Azure Tundra")
+auraDropdown:Add("Blue Aura")
+auraDropdown:Add("Dark Electro")
+auraDropdown:Add("Dark Lightning")
+auraDropdown:Add("Dark Storm")
+auraDropdown:Add("Electro")
+auraDropdown:Add("Enchanted Mirage")
+auraDropdown:Add("Entropic Blast")
+auraDropdown:Add("Eternal Megastrike")
+auraDropdown:Add("Grand Supernova")
+auraDropdown:Add("Green Aura")
+auraDropdown:Add("Inferno")
+auraDropdown:Add("Lightning")
+auraDropdown:Add("Muscle King")
+auraDropdown:Add("Power Lightning")
+auraDropdown:Add("Purple Aura")
+auraDropdown:Add("Purple Nova")
+auraDropdown:Add("Red Aura")
+auraDropdown:Add("Supernova")
+auraDropdown:Add("Ultra Inferno")
+auraDropdown:Add("Ultra Mirage")
+auraDropdown:Add("Unstable Mirage")
+auraDropdown:Add("Yellow Aura")
+
+-- Auto open aura toggle
+pets:AddSwitch("Auto Open Aura", function(bool)
+    _G.AutoHatchAura = bool
+    
+    if bool then
+        spawn(function()
+            while _G.AutoHatchAura and selectedAura ~= "" do
+                local auraToOpen = ReplicatedStorage.cPetShopFolder:FindFirstChild(selectedAura)
+                if auraToOpen then
+                    ReplicatedStorage.cPetShopRemote:InvokeServer(auraToOpen)
+                end
+                task.wait(1)
+            end
+        end)
+    end
+end)
