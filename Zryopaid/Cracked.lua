@@ -1,10 +1,10 @@
 -- Fixed Anti-Lag Script with Proper UI Implementation
 local success, library = pcall(function()
-    return loadstring(game:HttpGet("https://raw.githubusercontent.com/SLH-Seth/LUNA-UI-LIBRARY/refs/heads/main/Code", true))()
+    return loadstring(game:HttpGet("https://raw.githubusercontent.com/UnknownCodersonLT4/Cracked-Scripts/refs/heads/main/Zryopaid/ui.lua", true))()
 end)
 
 if not success then
-    warn("Failed to load Luna UI Library")
+    warn("CHECK YOUR CODE DUM ASS")
     return
 end
 
