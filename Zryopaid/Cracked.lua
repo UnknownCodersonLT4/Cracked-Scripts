@@ -1,81 +1,165 @@
-local Players = game:GetService("Players")
-local Lighting = game:GetService("Lighting")
-local RunService = game:GetService("RunService")
-local LocalPlayer = Players.LocalPlayer
+-- Fixed Anti-Lag Script with Proper UI Implementation
+local success, library = pcall(function()
+    return loadstring(game:HttpGet("https://raw.githubusercontent.com/SLH-Seth/LUNA-UI-LIBRARY/refs/heads/main/Code", true))()
+end)
 
-local BlackScreen = {}
+if not success then
+    warn("Failed to load Luna UI Library")
+    return
+end
 
-function BlackScreen:Create()
-    -- Create black screen GUI
-    local ScreenGui = Instance.new("ScreenGui")
-    ScreenGui.Name = "BlackScreenUI"
-    ScreenGui.ResetOnSpawn = false
-    ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-    ScreenGui.Parent = game:GetService("CoreGui")
+local window = library:AddWindow("Anti-Lag Pro", {
+    main_color = Color3.fromRGB(25, 25, 25),
+    min_size = Vector2.new(450, 500),
+    can_resize = true
+})
 
-    local Frame = Instance.new("Frame")
-    Frame.Size = UDim2.new(1, 0, 1, 0)
-    Frame.Position = UDim2.new(0, 0, 0, 0)
-    Frame.BackgroundColor3 = Color3.new(0, 0, 0)
-    Frame.BorderSizePixel = 0
-    Frame.ZIndex = 999
-    Frame.Parent = ScreenGui
+-- Main Tab
+local mainTab = window:AddTab("Main")
+local blackScreenSection = mainTab:AddSection("Black Screen", true)
+local worldSection = mainTab:AddSection("World Optimization", true)
+local charSection = mainTab:AddSection("Character Optimization", true)
+local extrasSection = mainTab:AddSection("Extras", true)
 
-    -- Optimize lighting
-    Lighting.GlobalShadows = false
-    Lighting.FogEnd = 100000
-    Lighting.Brightness = 0
-    settings().Rendering.QualityLevel = 1
+-- Anti-Lag System
+local AntiLag = {
+    BlackScreen = {
+        Enabled = false,
+        Gui = nil
+    },
+    WorldOptimized = false,
+    CharOptimized = false
+}
 
-    -- Remove unnecessary visual effects
-    for _, effect in pairs(Lighting:GetChildren()) do
-        if effect:IsA("PostEffect") then
-            effect.Enabled = false
-        elseif effect:IsA("Sky") then
-            effect:Destroy()
+-- Black Screen Functions
+function AntiLag:ToggleBlackScreen(state)
+    if state then
+        -- Create black screen
+        self.BlackScreen.Gui = Instance.new("ScreenGui")
+        self.BlackScreen.Gui.Name = "AntiLagBlackScreen"
+        self.BlackScreen.Gui.ResetOnSpawn = false
+        self.BlackScreen.Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+        self.BlackScreen.Gui.Parent = game:GetService("CoreGui")
+        
+        local frame = Instance.new("Frame")
+        frame.Size = UDim2.new(1, 0, 1, 0)
+        frame.Position = UDim2.new(0, 0, 0, 0)
+        frame.BackgroundColor3 = Color3.new(0, 0, 0)
+        frame.BorderSizePixel = 0
+        frame.ZIndex = 999
+        frame.Parent = self.BlackScreen.Gui
+        
+        -- Optimize lighting
+        game:GetService("Lighting").GlobalShadows = false
+        game:GetService("Lighting").Brightness = 0
+        self.BlackScreen.Enabled = true
+    else
+        -- Remove black screen
+        if self.BlackScreen.Gui then
+            self.BlackScreen.Gui:Destroy()
         end
+        game:GetService("Lighting").Brightness = 1
+        self.BlackScreen.Enabled = false
     end
+end
 
-    -- Create optimized sky
-    local newSky = Instance.new("Sky")
-    newSky.SkyboxBk = "rbxassetid://0"
-    newSky.SkyboxDn = "rbxassetid://0"
-    newSky.SkyboxFt = "rbxassetid://0"
-    newSky.SkyboxLf = "rbxassetid://0"
-    newSky.SkyboxRt = "rbxassetid://0"
-    newSky.SkyboxUp = "rbxassetid://0"
-    newSky.Parent = Lighting
-
-    -- Optimize character visuals
-    local function optimizeCharacter(character)
-        for _, part in pairs(character:GetDescendants()) do
-            if part:IsA("BasePart") then
-                part.Material = Enum.Material.SmoothPlastic
-                part.Reflectance = 0
-            elseif part:IsA("ParticleEmitter") or part:IsA("Decal") then
-                part:Destroy()
+-- World Optimization
+function AntiLag:OptimizeWorld(state)
+    if state then
+        settings().Rendering.QualityLevel = 1
+        
+        for _, obj in pairs(workspace:GetDescendants()) do
+            if obj:IsA("BasePart") then
+                obj.Material = Enum.Material.SmoothPlastic
+                obj.Reflectance = 0
+            elseif obj:IsA("ParticleEmitter") or obj:IsA("Fire") or obj:IsA("Smoke") then
+                obj:Destroy()
+            elseif obj:IsA("Decal") then
+                obj.Transparency = 1
             end
         end
+        self.WorldOptimized = true
+    else
+        settings().Rendering.QualityLevel = 10
+        self.WorldOptimized = false
     end
-
-    if LocalPlayer.Character then
-        optimizeCharacter(LocalPlayer.Character)
-    end
-
-    LocalPlayer.CharacterAdded:Connect(optimizeCharacter)
-
-    self.ScreenGui = ScreenGui
 end
 
-function BlackScreen:Destroy()
-    if self.ScreenGui then
-        self.ScreenGui:Destroy()
-    end
+-- Character Optimization
+function AntiLag:OptimizeCharacter(char)
+    if not char then return end
     
-    -- Restore some lighting settings
-    Lighting.GlobalShadows = true
-    Lighting.Brightness = 1
-    settings().Rendering.QualityLevel = 10
+    for _, part in pairs(char:GetDescendants()) do
+        if part:IsA("BasePart") then
+            part.Material = Enum.Material.SmoothPlastic
+            part.Reflectance = 0
+        elseif part:IsA("ParticleEmitter") then
+            part.Enabled = false
+        end
+    end
 end
 
-return BlackScreen
+-- UI Elements
+local blackScreenToggle = blackScreenSection:AddSwitch("Black Screen", false, function(state)
+    AntiLag:ToggleBlackScreen(state)
+end)
+
+local worldOptimizeToggle = worldSection:AddSwitch("World Optimization", false, function(state)
+    AntiLag:OptimizeWorld(state)
+end)
+
+local charOptimizeToggle = charSection:AddSwitch("Character Optimization", false, function(state)
+    AntiLag.CharOptimized = state
+    if state then
+        AntiLag:OptimizeCharacter(game.Players.LocalPlayer.Character)
+    end
+end)
+
+-- Character added event
+game.Players.LocalPlayer.CharacterAdded:Connect(function(char)
+    if AntiLag.CharOptimized then
+        AntiLag:OptimizeCharacter(char)
+    end
+end)
+
+-- Extreme FPS Mode
+extrasSection:AddButton("Extreme FPS Mode", function()
+    blackScreenToggle:Set(true)
+    worldOptimizeToggle:Set(true)
+    charOptimizeToggle:Set(true)
+    
+    -- Additional optimizations
+    game:GetService("RunService"):Set3dRenderingEnabled(false)
+    for _, sound in pairs(workspace:GetDescendants()) do
+        if sound:IsA("Sound") then
+            sound:Destroy()
+        end
+    end
+end)
+
+-- Reset Button
+extrasSection:AddButton("Reset All", function()
+    blackScreenToggle:Set(false)
+    worldOptimizeToggle:Set(false)
+    charOptimizeToggle:Set(false)
+    game:GetService("RunService"):Set3dRenderingEnabled(true)
+end)
+
+-- Status Label
+local statusLabel = mainTab:AddLabel("Status: Inactive")
+
+-- Update status
+task.spawn(function()
+    while task.wait(0.5) do
+        local status = {}
+        if AntiLag.BlackScreen.Enabled then table.insert(status, "Black Screen") end
+        if AntiLag.WorldOptimized then table.insert(status, "World Opt") end
+        if AntiLag.CharOptimized then table.insert(status, "Char Opt") end
+        
+        if #status > 0 then
+            statusLabel:Update("Status: "..table.concat(status, " | "))
+        else
+            statusLabel:Update("Status: Inactive")
+        end
+    end
+end)
