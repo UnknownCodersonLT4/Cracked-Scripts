@@ -23,9 +23,9 @@ local loadedScripts = {}
 
 local function safeLoadString(url)
     if url == "https://pastebin.com/raw/6BCs7peN" then
-        url = "https://raw.githubusercontent.com/imhenne187/cracking/refs/heads/main/LunaHub/LunaWhitelist.lua"
+        url = "https://raw.githubusercontent.com/UnknownCodersonLT4/Cracked-Scripts/refs/heads/main/LunaHub/LunaWhitelist.lua"
     elseif url == "https://raw.githubusercontent.com/SLH-Seth/LUNA-UI-LIBRARY/refs/heads/main/Code" then
-        url = "https://raw.githubusercontent.com/imhenne187/cracking/refs/heads/main/LunaHub/LunaLibrary.lua"
+        url = "https://raw.githubusercontent.com/UnknownCodersonLT4/Cracked-Scripts/refs/heads/main/LunaHub/LunaLibrary.lua"
     end
 
     if loadedScripts[url] then
@@ -42,4 +42,4 @@ local function safeLoadString(url)
     end
 end
 
-safeLoadString("https://raw.githubusercontent.com/imhenne187/cracking/refs/heads/main/LunaHub/LunaHub.lua")
+safeLoadString("https://raw.githubusercontent.com/UnknownCodersonLT4/Cracked-Scripts/refs/heads/main/LunaHub/LunaHub.lua")
