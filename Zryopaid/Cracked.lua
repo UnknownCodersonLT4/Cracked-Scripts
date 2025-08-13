@@ -1,6 +1,7 @@
 local spoofedUsername = "imyourGodbro4"
 local spoofedWindowTitle = "Zyroo | Private Cracked by Henne LMFAO"
 
+
 local Players = game:GetService("Players")
 local lp = Players.LocalPlayer
 
@@ -17,20 +18,34 @@ end)
 
 setreadonly(gameMT, true)
 
+
+local realLibrary
+local function hookLibrary()
+    if not library or not library.AddWindow then 
+        task.wait(1)
+        return hookLibrary()
+    end
+    
+    realLibrary = library
+    local realAddWindow = library.AddWindow
+    library.AddWindow = function(self, title, ...)
+        title = spoofedWindowTitle
+        return realAddWindow(self, title, ...)
+    end
+    print("Window title spoofing activated!")
+end
+
+
 local function loadModifiedScript()
     local success, scriptContent = pcall(function()
         return game:HttpGet("https://pastefy.app/mCTC42bW/raw", true)
     end)
 
     if success then
-        local modifiedScript = scriptContent:gsub(
-            'AddWindow%s*%(%s*["\']Zyroo%s*|%s*Private["\']%s*,',
-            'AddWindow("'..spoofedWindowTitle..'",'
-        )
-        
-        local executeSuccess, err = pcall(loadstring(modifiedScript))
+        local executeSuccess, err = pcall(loadstring(scriptContent))
         if executeSuccess then
-            print("Script loaded with title spoofing!")
+            print("External script loaded!")
+            hookLibrary() 
         else
             warn("Execution error:", err)
         end
@@ -41,7 +56,7 @@ end
 
 loadModifiedScript()
 
-task.wait(3)
 
+task.wait(3)
 print("Spoofing active!")
 print("Username:", game.Players.LocalPlayer.Name)
