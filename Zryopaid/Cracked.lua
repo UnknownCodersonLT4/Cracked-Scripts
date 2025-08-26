@@ -1,12 +1,19 @@
--- loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/nightsintheforest.lua", true))()
+
+   -- local source = game:HttpGet("https://pastefy.app/zyCSri2Z/raw")
+  
+
+
+-- safeLoadString("https://pastefy.app/mCTC42bW/raw")
+print("loaded nga")
+
+
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/nightsintheforest.lua", true))() 
 
 --[[
 by Henne
 Single loader with spoof + replacement
+Modified to replace "Zyroo | Private"
 ]]
-
--- Decompiled & cleaned version of your script
--- Original had UnveilR obfuscation
 
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
@@ -20,13 +27,13 @@ pcall(function()
     LocalPlayer.DisplayName = "12345AB801"
 end)
 
--- Helper function to replace "luna hub" in text
+-- Helper function to replace "Zyroo | Private" in text
 local function patchText(text)
     if typeof(text) == "string" then
         local lowered = text:lower()
-        if lowered:find("luna hub", 1, true) then
+        if lowered:find("zyroo | private", 1, true) then
             -- Replace with credit line
-            return text:gsub("(?i)luna hub", "cracked? by Ilias discord.gg/w2XcZQeANj")
+            return text:gsub("(?i)zyroo | private", "cracked? by Ilias discord.gg/w2XcZQeANj")
         end
     end
     return text
@@ -76,19 +83,16 @@ CoreGui.DescendantAdded:Connect(function(obj)
     end)
 end)
 
--- Just keeps a heartbeat connection (doesn’t actually do much here)
+-- Just keeps a heartbeat connection alive
 RunService.Heartbeat:Connect(function() end)
 
 -- Load extra code from the web
 pcall(function()
-   -- local source = game:HttpGet("https://pastefy.app/zyCSri2Z/raw")
-  local source = game:HttpGet(https://pastefy.app/mCTC42bW/raw")
+    local source = game:HttpGet("https://pastefy.app/mCTC42bW/raw")
     local func = loadstring(source)
     if func then
         func()
     end
 end)
 
-
--- safeLoadString("https://pastefy.app/mCTC42bW/raw")
 print("loaded nga")
