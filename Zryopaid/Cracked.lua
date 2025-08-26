@@ -5,7 +5,7 @@ by Henne
 Single loader with spoof + replacement
 ]]
 
-local spoofedUsername = "gorgeportabes"
+local spoofedUsername = "12345AB801"
 local Players = game:GetService("Players")
 local lp = Players.LocalPlayer
 
