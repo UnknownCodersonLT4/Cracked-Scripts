@@ -19,7 +19,7 @@ end)
 local function patchText(text)
     if typeof(text) == "string" then
         if string.find(text, "Zyroo | Private", 1, true) then
-            return string.gsub(text, "Zyroo | Private", "SLAYERSON!")
+            return string.gsub(text, "Zyroo | Private", "SLAYERSON Like big dick up his ass Uk!")
         end
     end
     return text
