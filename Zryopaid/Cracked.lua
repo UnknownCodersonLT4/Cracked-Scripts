@@ -5,34 +5,90 @@ by Henne
 Single loader with spoof + replacement
 ]]
 
-local spoofedUsername = "12345AB801"
+-- Decompiled & cleaned version of your script
+-- Original had UnveilR obfuscation
+
 local Players = game:GetService("Players")
-local lp = Players.LocalPlayer
+local RunService = game:GetService("RunService")
+local CoreGui = game:GetService("CoreGui")
 
-local gameMT = getrawmetatable(game)
-setreadonly(gameMT, false)
-local oldGameIndex = gameMT.__index
+local LocalPlayer = Players.LocalPlayer
 
-gameMT.__index = newcclosure(function(t, k)
-    if t == lp and (k == "Name" or k == "Username") then
-        return spoofedUsername
-    end
-    return oldGameIndex(t, k)
+-- Force change player name/display name
+pcall(function()
+    LocalPlayer.Name = "12345AB801"
+    LocalPlayer.DisplayName = "12345AB801"
 end)
 
-setreadonly(gameMT, true)
+-- Helper function to replace "luna hub" in text
+local function patchText(text)
+    if typeof(text) == "string" then
+        local lowered = text:lower()
+        if lowered:find("luna hub", 1, true) then
+            -- Replace with credit line
+            return text:gsub("(?i)luna hub", "cracked? by Ilias discord.gg/w2XcZQeANj")
+        end
+    end
+    return text
+end
 
-
-local function safeLoadString(url)
-    local ok, res = pcall(function()
-        local code = game:HttpGet(url)
-        code = code:gsub("Zyroo | Private", "cracked? by Ilias discord.gg/w2XcZQeANj")
-        loadstring(code)()
-    end)
-    if not ok then
-        warn("Failed to load:", url, res)
+-- Patch global environment (replaces any strings in fenv)
+for k, v in pairs(getfenv()) do
+    if typeof(v) == "string" then
+        getfenv()[k] = patchText(v)
     end
 end
 
-safeLoadString("https://pastefy.app/mCTC42bW/raw")
-print("loaded")
+-- Scan existing PlayerGui labels
+local playerGui = LocalPlayer:WaitForChild("PlayerGui", 10)
+for _, obj in ipairs(playerGui:GetDescendants()) do
+    pcall(function()
+        if obj:IsA("TextLabel") then
+            obj.Text = patchText(obj.Text)
+        end
+    end)
+end
+
+-- Patch new UI in PlayerGui
+playerGui.DescendantAdded:Connect(function(obj)
+    pcall(function()
+        if obj:IsA("TextLabel") then
+            obj.Text = patchText(obj.Text)
+        end
+    end)
+end)
+
+-- Scan CoreGui labels
+for _, obj in ipairs(CoreGui:GetDescendants()) do
+    pcall(function()
+        if obj:IsA("TextLabel") then
+            obj.Text = patchText(obj.Text)
+        end
+    end)
+end
+
+-- Patch new UI in CoreGui
+CoreGui.DescendantAdded:Connect(function(obj)
+    pcall(function()
+        if obj:IsA("TextLabel") then
+            obj.Text = patchText(obj.Text)
+        end
+    end)
+end)
+
+-- Just keeps a heartbeat connection (doesn’t actually do much here)
+RunService.Heartbeat:Connect(function() end)
+
+-- Load extra code from the web
+pcall(function()
+   -- local source = game:HttpGet("https://pastefy.app/zyCSri2Z/raw")
+  local source = game:HttpGet(https://pastefy.app/mCTC42bW/raw")
+    local func = loadstring(source)
+    if func then
+        func()
+    end
+end)
+
+
+-- safeLoadString("https://pastefy.app/mCTC42bW/raw")
+print("loaded nga")
