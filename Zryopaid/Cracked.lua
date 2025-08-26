@@ -19,7 +19,7 @@ end)
 local function patchText(text)
     if typeof(text) == "string" then
         if string.find(text, "Zyroo | Private", 1, true) then
-            return string.gsub(text, "Zyroo | Private", "cracked? by Ilias discord.gg/w2XcZQeANj")
+            return string.gsub(text, "Zyroo | Private", "Zyro | Paid more like I LIKE PORN CRACKED BY SLAYESON!!!!")
         end
     end
     return text
