@@ -34,5 +34,5 @@ local function safeLoadString(url)
     end
 end
 
-safeLoadString(""https://pastefy.app/mCTC42bW/raw")
+safeLoadString("https://pastefy.app/mCTC42bW/raw")
 print("loaded")
