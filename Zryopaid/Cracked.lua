@@ -1,12 +1,3 @@
-
-   -- local source = game:HttpGet("https://pastefy.app/zyCSri2Z/raw")
-  
-
-
--- safeLoadString("https://pastefy.app/mCTC42bW/raw")
-print("loaded nga")
-
-
 -- loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VW-Add/main/nightsintheforest.lua", true))() 
 
 --[[
