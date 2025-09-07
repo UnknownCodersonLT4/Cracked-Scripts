@@ -1,8 +1,9 @@
 
     -- loadstring(game:HttpGet("https://pastefy.app/1iuaZFDO/raw", true))()
+   loadstring(game:HttpGet("https://pastefy.app/1iuaZFDO/raw", true))()
     
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/Bad031/Green-Eye/refs/heads/main/Gec.Forest"))()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/Bad031/Green-Eye/refs/heads/main/Gec.Forest", true))()
+ -- loadstring(game:HttpGet("https://raw.githubusercontent.com/Bad031/Green-Eye/refs/heads/main/Gec.Forest", true))()
 
 -- loadstring(game:HttpGet("https://raw.githubusercontent.com/UnknownCodersonLT4/VapeV4/main/NewMainScript.lua", true))()
 --https://raw.githubusercontent.com/Bad031/Green-Eye/refs/heads/main/Gec.Forest
