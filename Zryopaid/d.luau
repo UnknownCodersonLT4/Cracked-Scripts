@@ -123,9 +123,9 @@ local function ValidateIndex(Index : any)
 	local IsNumber = IndexType == "number"
 
 	if IsNumber then
-		-- ALWAYS show explicit indexing for numeric keys: [1] = value
-		return "["..Index.."] = "
-	elseif IndexType == "string" then
+        -- ALWAYS show explicit indexing for numeric keys: [1] = value
+        return "["..Index.."] = "
+    elseif IndexType == "string" then
 		local IsKeyword = Keywords[Index]
 
 		if not IsKeyword then
@@ -749,9 +749,9 @@ function DefaultMethods.table(tbl : {[any] : any}, format : boolean?, indents : 
     local Serialized = {}
     
     for i,v in next, tbl do
-        Serialized[CurrentIndex] = (if CurrentIndex ~= i then ValidateIndex(i) else "")..Serialize(v, format, stackindent, CyclicList, InComment)
-        CurrentIndex += 1    
-    end
+    Serialized[CurrentIndex] = ValidateIndex(i)..Serialize(v, format, stackindent, CyclicList, InComment)
+    CurrentIndex += 1    
+end
     
     local formatspace = if format then "\n" else ""
     local Contents = formatspace..stackindent..concat(Serialized, (if format then ",\n" else ", ")..stackindent)..formatspace..indents
