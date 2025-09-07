@@ -1,4 +1,4 @@
-now what about this? "--[[
+--[[
 	DataToCode - Make DataTypes actually readable
 
 	Created by: https://github.com/78n
@@ -900,4 +900,4 @@ return setmetatable(Class, {
 	__tostring = function(self)
 		return "DataToCode "..self.__VERSION
 	end
-})"
+})
