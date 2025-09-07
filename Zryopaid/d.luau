@@ -719,61 +719,21 @@ do
 		Class.GlobalFunctions = GlobalFunctions
 	end
 
-	DefaultMethods["function"] = function(Function : (...any?) -> ...any?, format : boolean?, indents : string, _, InComment : boolean?)
-		local IsGlobal = GlobalFunctions[Function]
-
-		if not IsGlobal then
-			if format then
-				local SerializeString = Methods.string
-
-				local CommentSeperator = if not InComment then "" else "="
-				local tempindents = indents.."\t\t\t"
-				local newlineindent = ",\n"..tempindents
-				local source, line, name, numparams, vargs = info(Function, "slna")
-				local lclosure = line ~= -1
-
-				return (if lclosure then "" else "coroutine.wrap(").."function()\n\t"..indents.."--["..CommentSeperator.."[\n\t\t"..indents.."info = {\n"..tempindents.."source = "..SerializeString(source)..newlineindent.."line = "..line..newlineindent.."what = "..(if lclosure then "\"Lua\"" else "\"C\"")..newlineindent.."name = "..SerializeString(name)..newlineindent.."numparams = "..numparams..newlineindent.."vargs = "..(if vargs then "true" else "false")..newlineindent.."function = "..tostring(Function).."\n\t\t"..indents.."}\n\t"..indents.."]"..CommentSeperator.."]\n"..indents.."end"..(if lclosure then "" else ")")
-			end
-
-			return if islclosure(Function) then "function() end" else "coroutine.wrap(function() end)"
-		end
-
-		return IsGlobal
-	end
+DefaultMethods["function"] = function(Function : (...any?) -> ...any?, format : boolean?, indents : string, _, InComment : boolean?)
+    local IsGlobal = GlobalFunctions[Function]
+    
+    if not IsGlobal then
+        -- JUST RETURN SIMPLE FUNCTION REPRESENTATION - NO DEBUG INFO!
+        return "function() end"
+    end
+    
+    return IsGlobal
+  end
 end
 
+
 function DefaultMethods.table(tbl : {[any] : any}, format : boolean?, indents : string, CyclicList : {[{[any] : any?}] : boolean | nil}?, InComment : boolean?)
-	if not CyclicList then
-		CyclicList = setmetatable({}, weakkeys)
-	end
-
-	if not CyclicList[tbl] then
-		local isreadonly = isfrozen(tbl)
-		local Index, Value = next(tbl)
-
-		if Index ~= nil then
-			local Indents = indents..(if format then "\t" else "")
-			local Ending = (if format then ",\n" else ", ")
-			local formatspace = if format then "\n" else ""
-			local Generation = "[table]:{"..formatspace
-			local CurrentIndex = 1
-
-			CyclicList[tbl] = true
-			repeat
-				Generation ..= Indents..(if CurrentIndex ~= Index then ValidateIndex(Index) else "")..Serialize(Value, format, Indents, CyclicList, InComment)
-				Index, Value = next(tbl, Index)
-				Generation ..= if Index ~= nil then Ending else formatspace..indents.."}"
-				CurrentIndex += 1
-			until Index == nil
-			CyclicList[tbl] = nil
-
-			return if not isreadonly then Generation else "table.freeze("..Generation..")"
-		end
-
-		return if not isreadonly then "[table]:{}" else "table.freeze([table]:{})"
-	else
-		return "*** cycle table reference detected ***" -- I am NOT supporting cyclic tables as its a huge pain
-	end
+    return ""  -- COMPLETELY REMOVE ALL TABLE OUTPUT
 end
 
 DefaultMethods["nil"] = function()
