@@ -64,7 +64,7 @@ PetTab:Dropdown({
         "Eternal Nebula Dragon","Evolved Eternal Nebula Dragon","Shadows Edge Kitty","Evolved Shadows Edge Kitty",
         "Ultimate Overdrive Bunny","Evolved Ultimate Overdrive Bunny","Blue Phoenix","Evolved Blue Phoenix",
         "Magical Pegasus","Evolved Magical Pegasus","Voltaic Falcon","Evolved Voltaic Falcon",
-        "Electro Golem","Quantum Dragon","Evolved Quantum Dragon","Swift Samurai","Evolved Swift Samurai" 
+        "Electro Golem"
     },
     Multi = false,
     Default = "Red Bunny",
@@ -93,6 +93,9 @@ local OrbTab = Window:Tab({
 
 local orbAmount = 1
 local selectedOrb = "Red Orb"
+local farmSpeed = 1
+local isFarming = false
+local farmConnection = nil
 
 OrbTab:Input({
     Title = "Set Amount",
@@ -105,6 +108,21 @@ OrbTab:Input({
         local amount = tonumber(input)
         if amount then
             orbAmount = amount
+        end
+    end
+})
+
+OrbTab:Input({
+    Title = "Farm Speed",
+    Desc = "Orbs per second (1 = normal speed)",
+    Value = "1",
+    InputIcon = "gauge",
+    Type = "Input",
+    Placeholder = "Enter speed...",
+    Callback = function(input)
+        local speed = tonumber(input)
+        if speed and speed > 0 then
+            farmSpeed = speed
         end
     end
 })
@@ -127,6 +145,43 @@ OrbTab:Button({
     Callback = function()
         for i = 1, orbAmount do
             game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", selectedOrb, "City")
+        end
+    end
+})
+
+-- Toggle button for speed farming
+OrbTab:Button({
+    Title = "Start Speed Farming",
+    Desc = "Toggle automatic orb farming",
+    ButtonIcon = "play",
+    Callback = function()
+        if isFarming then
+            -- Stop farming
+            if farmConnection then
+                farmConnection:Disconnect()
+                farmConnection = nil
+            end
+            isFarming = false
+            OrbTab:UpdateButton({
+                Title = "Start Speed Farming",
+                Desc = "Toggle automatic orb farming",
+                ButtonIcon = "play"
+            })
+        else
+            -- Start farming
+            isFarming = true
+            OrbTab:UpdateButton({
+                Title = "Stop Speed Farming",
+                Desc = "Toggle automatic orb farming",
+                ButtonIcon = "stop"
+            })
+            
+            -- Create farming loop
+            farmConnection = game:GetService("RunService").Heartbeat:Connect(function()
+                for i = 1, farmSpeed do
+                    game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", selectedOrb, "City")
+                end
+            end)
         end
     end
 })
