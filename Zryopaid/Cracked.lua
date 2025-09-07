@@ -93,13 +93,12 @@ local OrbTab = Window:Tab({
 
 local orbAmount = 1
 local selectedOrb = "Red Orb"
-local farmSpeed = 1
 local isFarming = false
 local farmConnection = nil
 
 OrbTab:Input({
-    Title = "Set Amount",
-    Desc = "Enter how many orbs to collect",
+    Title = "Set Amount / Speed",
+    Desc = "Amount to collect or speed (orbs per second)",
     Value = "1",
     InputIcon = "bird",
     Type = "Input",
@@ -108,21 +107,6 @@ OrbTab:Input({
         local amount = tonumber(input)
         if amount then
             orbAmount = amount
-        end
-    end
-})
-
-OrbTab:Input({
-    Title = "Farm Speed",
-    Desc = "Orbs per second (1 = normal speed)",
-    Value = "1",
-    InputIcon = "gauge",
-    Type = "Input",
-    Placeholder = "Enter speed...",
-    Callback = function(input)
-        local speed = tonumber(input)
-        if speed and speed > 0 then
-            farmSpeed = speed
         end
     end
 })
@@ -140,7 +124,7 @@ OrbTab:Dropdown({
 
 OrbTab:Button({
     Title = "Collect Orb",
-    Desc = "Collect selected orb",
+    Desc = "Collect selected orb once",
     ButtonIcon = "zap",
     Callback = function()
         for i = 1, orbAmount do
@@ -149,9 +133,9 @@ OrbTab:Button({
     end
 })
 
--- Toggle button for speed farming
+-- Toggle button for speed farming (uses the same amount input as speed)
 OrbTab:Button({
-    Title = "Start Speed Farming",
+    Title = "Start Auto Farm",
     Desc = "Toggle automatic orb farming",
     ButtonIcon = "play",
     Callback = function()
@@ -163,7 +147,7 @@ OrbTab:Button({
             end
             isFarming = false
             OrbTab:UpdateButton({
-                Title = "Start Speed Farming",
+                Title = "Start Auto Farm",
                 Desc = "Toggle automatic orb farming",
                 ButtonIcon = "play"
             })
@@ -171,14 +155,14 @@ OrbTab:Button({
             -- Start farming
             isFarming = true
             OrbTab:UpdateButton({
-                Title = "Stop Speed Farming",
+                Title = "Stop Auto Farm",
                 Desc = "Toggle automatic orb farming",
                 ButtonIcon = "stop"
             })
             
-            -- Create farming loop
+            -- Create farming loop using the amount as speed (orbs per second)
             farmConnection = game:GetService("RunService").Heartbeat:Connect(function()
-                for i = 1, farmSpeed do
+                for i = 1, orbAmount do
                     game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer("collectOrb", selectedOrb, "City")
                 end
             end)
