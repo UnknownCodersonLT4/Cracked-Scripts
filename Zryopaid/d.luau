@@ -122,8 +122,11 @@ local function ValidateIndex(Index : any)
 	local IndexType = type(Index)
 	local IsNumber = IndexType == "number"
 
-	if IsNumber or IndexType == "string" then
-		local IsKeyword = if IsNumber then Index else Keywords[Index]
+	if IsNumber then
+		-- ALWAYS show explicit indexing for numeric keys: [1] = value
+		return "["..Index.."] = "
+	elseif IndexType == "string" then
+		local IsKeyword = Keywords[Index]
 
 		if not IsKeyword then
 			if Index ~= "" then
@@ -755,7 +758,7 @@ function DefaultMethods.table(tbl : {[any] : any}, format : boolean?, indents : 
     
     CyclicList[tbl] = nil
     
-    return if not isfrozen then "{"..Contents.."}" else "table.freeze({"..Contents.."})"
+    return if not isfrozen then "[table]:{"..Contents.."}" else "[table]:table.freeze({"..Contents.."})"
 end
 
 DefaultMethods["nil"] = function()
