@@ -733,7 +733,29 @@ end
 
 
 function DefaultMethods.table(tbl : {[any] : any}, format : boolean?, indents : string, CyclicList : {[{[any] : any?}] : boolean | nil}?, InComment : boolean?)
-    return ""  -- COMPLETELY REMOVE ALL TABLE OUTPUT
+    if CyclicList and CyclicList[tbl] then
+        return "\"<Cyclic Reference>\""
+    end
+    
+    CyclicList = CyclicList or setmetatable({}, weakkeys)
+    CyclicList[tbl] = true
+    
+    local isfrozen = isfrozen(tbl)
+    local stackindent = indents..(if format then "\t" else "")
+    local CurrentIndex = 1
+    local Serialized = {}
+    
+    for i,v in next, tbl do
+        Serialized[CurrentIndex] = (if CurrentIndex ~= i then ValidateIndex(i) else "")..Serialize(v, format, stackindent, CyclicList, InComment)
+        CurrentIndex += 1    
+    end
+    
+    local formatspace = if format then "\n" else ""
+    local Contents = formatspace..stackindent..concat(Serialized, (if format then ",\n" else ", ")..stackindent)..formatspace..indents
+    
+    CyclicList[tbl] = nil
+    
+    return if not isfrozen then "{"..Contents.."}" else "table.freeze({"..Contents.."})"
 end
 
 DefaultMethods["nil"] = function()
