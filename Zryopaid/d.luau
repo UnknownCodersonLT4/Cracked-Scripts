@@ -754,7 +754,8 @@ function DefaultMethods.table(tbl : {[any] : any}, format : boolean?, indents : 
 end
     
     local formatspace = if format then "\n" else ""
-    local Contents = formatspace..stackindent..concat(Serialized, (if format then ",\n" else ", ")..stackindent)..formatspace..indents
+    local separator = if format then ",\n"..stackindent else ", "
+local Contents = formatspace..stackindent..concat(Serialized, separator)..formatspace..indents
     
     CyclicList[tbl] = nil
     
