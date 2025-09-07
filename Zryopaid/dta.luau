@@ -33,10 +33,10 @@ local Class = {
 local Keywords = {
 	["local"] = "\"local\"",
 	["function"] = "\"function\"",
-	["type"] = "\"type\"",
-	["typeof"] = "\"typeof\"",
-	["export"] = "\"export\"",
-	["continue"] = "\"continue\"",
+	--	["type"] = "\"type\"",
+	--	["typeof"] = "\"typeof\"",
+	--	["export"] = "\"export\"",
+	--	["continue"] = "\"continue\"",
 	["and"] = "\"and\"",
 	["break"] = "\"break\"",
 	["not"] = "\"not\"",
@@ -122,8 +122,11 @@ local function ValidateIndex(Index : any)
 	local IndexType = type(Index)
 	local IsNumber = IndexType == "number"
 
-	if IsNumber or IndexType == "string" then
-		local IsKeyword = if IsNumber then Index else Keywords[Index]
+	if IsNumber then
+        -- ALWAYS show explicit indexing for numeric keys: [1] = value
+        return "["..Index.."] = "
+    elseif IndexType == "string" then
+		local IsKeyword = Keywords[Index]
 
 		if not IsKeyword then
 			if Index ~= "" then
@@ -173,7 +176,7 @@ function DefaultMethods.CFrame(CFrame : CFrame)
 		local x, y, z, R00, R01, R02, R10, R11, R12, R20, R21, R22 = CFrame:GetComponents()
 		local SerializeNumber = Methods.number
 
-		return "CFrame.new("..SerializeNumber(x)..(", "))..SerializeNumber(y)..(", "))..SerializeNumber(z)..(", "))..SerializeNumber(R00)..(", "))..SerializeNumber(R01)..(", "))..SerializeNumber(R02)..(", "))..SerializeNumber(R10)..(", "))..SerializeNumber(R11)..(", "))..SerializeNumber(R12)..(", "))..SerializeNumber(R20)..(", "))..SerializeNumber(R21)..(", "))..SerializeNumber(R22)..")"
+		return "CFrame.new("..SerializeNumber(x)..", "..SerializeNumber(y)..", "..SerializeNumber(z)..", "..SerializeNumber(R00)..", "..SerializeNumber(R01)..", "..SerializeNumber(R02)..", "..SerializeNumber(R10)..", "..SerializeNumber(R11)..", "..SerializeNumber(R12)..", "..SerializeNumber(R20)..", "..SerializeNumber(R21)..", "..SerializeNumber(R22)..")"
 	end
 
 	return Generation
@@ -209,7 +212,7 @@ end
 function DefaultMethods.Color3(Color : Color3)
 	local SerializeNumber = Methods.number
 
-	return "Color3.new("..SerializeNumber(Color.R)..(", "))..SerializeNumber(Color.G)..(", "))..SerializeNumber(Color.B)..")"
+	return "Color3.new("..SerializeNumber(Color.R)..", "..SerializeNumber(Color.G)..", "..SerializeNumber(Color.B)..")"
 end
 
 function DefaultMethods.ColorSequence(Sequence : ColorSequence)
@@ -226,7 +229,7 @@ function DefaultMethods.ColorSequence(Sequence : ColorSequence)
 end
 
 function DefaultMethods.ColorSequenceKeypoint(KeyPoint : ColorSequenceKeypoint)
-	return "ColorSequenceKeypoint.new("..Methods.number(KeyPoint.Time)..(", "))..Methods.Color3(KeyPoint.Value)..")"
+	return "ColorSequenceKeypoint.new("..Methods.number(KeyPoint.Time)..", "..Methods.Color3(KeyPoint.Value)..")"
 end
 
 function DefaultMethods.Content(content : Content)
@@ -242,7 +245,7 @@ end
 function DefaultMethods.DockWidgetPluginGuiInfo(Dock : DockWidgetPluginGuiInfo)
 	local ArgumentFunction = tostring(Dock):gmatch(":([%w%-]+)")
 
-	return "DockWidgetPluginGuiInfo.new(Enum.InitialDockState."..ArgumentFunction()..(", "))..(if ArgumentFunction() == "1" then "true" else "false")..(", "))..(if ArgumentFunction() == "1" then "true" else "false")..(", "))..ArgumentFunction()..(", "))..ArgumentFunction()..(", "))..ArgumentFunction()..(", "))..ArgumentFunction()..")"
+	return "DockWidgetPluginGuiInfo.new(Enum.InitialDockState."..ArgumentFunction()..", "..(if ArgumentFunction() == "1" then "true" else "false")..", "..(if ArgumentFunction() == "1" then "true" else "false")..", "..ArgumentFunction()..", "..ArgumentFunction()..", "..ArgumentFunction()..", "..ArgumentFunction()..")"
 end
 
 function DefaultMethods.Enum(Enum : Enum)
@@ -270,7 +273,7 @@ function DefaultMethods.Faces(Faces : Faces)
 		if Faces.Top then "Enum.NormalId.Top" else nil,
 		if Faces.Bottom then "Enum.NormalId.Bottom" else nil,
 		if Faces.Left then "Enum.NormalId.Left" else nil,
-		if Faces.Rright then "Enum.NormalId.Right" else nil,
+		if Faces.Right then "Enum.NormalId.Right" else nil,
 		if Faces.Back then "Enum.NormalId.Back" else nil,
 		if Faces.Front then "Enum.NormalId.Front" else nil,
 	}, ", ")..")"
@@ -279,11 +282,11 @@ end
 function DefaultMethods.FloatCurveKey(CurveKey : FloatCurveKey)
 	local SerializeNumber = Methods.number
 
-	return "FloatCurveKey.new("..SerializeNumber(CurveKey.Time)..(", "))..SerializeNumber(CurveKey.Value)..(", ")).."Enum.KeyInterpolationMode."..CurveKey.Interpolation.Name..")"
+	return "FloatCurveKey.new("..SerializeNumber(CurveKey.Time)..", "..SerializeNumber(CurveKey.Value)..", Enum.KeyInterpolationMode."..CurveKey.Interpolation.Name..")"
 end
 
 function DefaultMethods.Font(Font : Font)
-	return "Font.new("..Methods.string(Font.Family)..(", ")).."Enum.FontWeight."..Font.Weight.Name..(", ")).."Enum.FontStyle."..Font.Style.Name..")"
+	return "Font.new("..Methods.string(Font.Family)..", Enum.FontWeight."..Font.Weight.Name..", Enum.FontStyle."..Font.Style.Name..")"
 end
 
 do
@@ -363,7 +366,7 @@ end
 function DefaultMethods.NumberRange(Range : NumberRange)
 	local SerializeNumber = Methods.number
 
-	return "NumberRange.new("..SerializeNumber(Range.Min)..(", "))..SerializeNumber(Range.Max)..")"
+	return "NumberRange.new("..SerializeNumber(Range.Min)..", "..SerializeNumber(Range.Max)..")"
 end
 
 function DefaultMethods.NumberSequence(Sequence : NumberSequence)
@@ -398,11 +401,11 @@ end
 function DefaultMethods.NumberSequenceKeypoint(Keypoint : NumberSequenceKeypoint)
 	local SerializeNumber = Methods.number
 
-	return "NumberSequenceKeypoint.new("..SerializeNumber(Keypoint.Time)..(", "))..SerializeNumber(Keypoint.Value)..(", "))..SerializeNumber(Keypoint.Envelope)..")"
+	return "NumberSequenceKeypoint.new("..SerializeNumber(Keypoint.Time)..", "..SerializeNumber(Keypoint.Value)..", "..SerializeNumber(Keypoint.Envelope)..")"
 end
 
 function DefaultMethods.PathWaypoint(Waypoint : PathWaypoint)
-	return "PathWaypoint.new("..Methods.Vector3(Waypoint.Position)..(", ")).."Enum.PathWaypointAction."..Waypoint.Action.Name..(", "))..Methods.string(Waypoint.Label)..")"
+	return "PathWaypoint.new("..Methods.Vector3(Waypoint.Position)..", Enum.PathWaypointAction."..Waypoint.Action.Name..", "..Methods.string(Waypoint.Label)..")"
 end
 
 do
@@ -411,7 +414,7 @@ do
 	end
 
 	function DefaultMethods.PhysicalProperties(Properties : PhysicalProperties)
-		return "PhysicalProperties.new("..(nanToString(Properties.Density))..(", "))..nanToString(Properties.Friction)..(", "))..nanToString(Properties.Elasticity)..(", "))..nanToString(Properties.FrictionWeight)..(", "))..nanToString(Properties.ElasticityWeight)..")"
+		return "PhysicalProperties.new("..(nanToString(Properties.Density))..", "..nanToString(Properties.Friction)..", "..nanToString(Properties.Elasticity)..", "..nanToString(Properties.FrictionWeight)..", "..nanToString(Properties.ElasticityWeight)..")"
 	end
 end
 
@@ -464,7 +467,7 @@ end
 function DefaultMethods.Ray(Ray : Ray)
 	local SerializeVector3 = Methods.Vector3
 
-	return "Ray.new("..SerializeVector3(Ray.Origin)..(", "))..SerializeVector3(Ray.Direction)..")"
+	return "Ray.new("..SerializeVector3(Ray.Origin)..", "..SerializeVector3(Ray.Direction)..")"
 end
 
 do
@@ -486,7 +489,7 @@ end
 function DefaultMethods.Rect(Rect : Rect)
 	local SerializeVector2 = Methods.Vector2
 
-	return "Rect.new("..SerializeVector2(Rect.Min)..(", "))..SerializeVector2(Rect.Max)..")"
+	return "Rect.new("..SerializeVector2(Rect.Min)..", "..SerializeVector2(Rect.Max)..")"
 end
 
 function DefaultMethods.Region3(Region : Region3)
@@ -494,17 +497,17 @@ function DefaultMethods.Region3(Region : Region3)
 	local Center = Region.CFrame.Position
 	local Size = Region.Size/2
 
-	return "Region3.new("..SerializeVector3(Center - Size)..(", "))..SerializeVector3(Center + Size)..")"
+	return "Region3.new("..SerializeVector3(Center - Size)..", "..SerializeVector3(Center + Size)..")"
 end
 
 function DefaultMethods.Region3int16(Region : Region3int16)
 	local SerializeVector3int16 = Methods.Vector3int16
 
-	return "Region3int16.new("..SerializeVector3int16(Region.Min)..(", "))..SerializeVector3int16(Region.Max)..")"
+	return "Region3int16.new("..SerializeVector3int16(Region.Min)..", "..SerializeVector3int16(Region.Max)..")"
 end
 
 function DefaultMethods.RotationCurveKey(Curve : RotationCurveKey)
-	return "RotationCurveKey.new("..Methods.number(Curve.Time)..(", "))..Methods.CFrame(Curve.Value)..(", ")).."Enum.KeyInterpolationMode."..Curve.Interpolation.Name..")"
+	return "RotationCurveKey.new("..Methods.number(Curve.Time)..", "..Methods.CFrame(Curve.Value)..", Enum.KeyInterpolationMode."..Curve.Interpolation.Name..")"
 end
 
 function DefaultMethods.SharedTable(Shared : SharedTable, format : boolean?, indents : string, _, InComment : boolean?)
@@ -530,11 +533,11 @@ function DefaultMethods.SharedTable(Shared : SharedTable, format : boolean?, ind
 end
 
 function DefaultMethods.TweenInfo(Info : TweenInfo)
-	return "TweenInfo.new("..Methods.number(Info.Time)..(", ")).."Enum.EasingStyle."..Info.EasingStyle.Name..(", ")).."Enum.EasingDirection."..Info.EasingDirection.Name..(", "))..Info.RepeatCount..(", "))..(if Info.Reverses then "true" else "false")..(", "))..Methods.number(Info.DelayTime)..")"
+	return "TweenInfo.new("..Methods.number(Info.Time)..", Enum.EasingStyle."..Info.EasingStyle.Name..", Enum.EasingDirection."..Info.EasingDirection.Name..", "..Info.RepeatCount..", "..(if Info.Reverses then "true" else "false")..", "..Methods.number(Info.DelayTime)..")"
 end
 
 function DefaultMethods.UDim(UDim : UDim)
-	return "UDim.new("..Methods.number(UDim.Scale)..(", "))..UDim.Offset..")"
+	return "UDim.new("..Methods.number(UDim.Scale)..", "..UDim.Offset..")"
 end
 
 function DefaultMethods.UDim2(UDim2 : UDim2)
@@ -542,27 +545,27 @@ function DefaultMethods.UDim2(UDim2 : UDim2)
 	local Width = UDim2.X
 	local Height = UDim2.Y
 
-	return "UDim2.new("..SerializeNumber(Width.Scale)..(", "))..Width.Offset..(", "))..SerializeNumber(Height.Scale)..(", "))..Height.Offset..")"
+	return "UDim2.new("..SerializeNumber(Width.Scale)..", "..Width.Offset..", "..SerializeNumber(Height.Scale)..", "..Height.Offset..")"
 end
 
 function DefaultMethods.Vector2(Vector : Vector2)
 	local SerializeNumber = Methods.number
 
-	return "Vector2.new("..SerializeNumber(Vector.X)..(", "))..SerializeNumber(Vector.Y)..")"
+	return "Vector2.new("..SerializeNumber(Vector.X)..", "..SerializeNumber(Vector.Y)..")"
 end
 
 function DefaultMethods.Vector2int16(Vector : Vector2int16)
-	return "Vector2int16.new("..Vector.X..(", "))..Vector.Y..")"
+	return "Vector2int16.new("..Vector.X..", "..Vector.Y..")"
 end
 
 function DefaultMethods.Vector3(Vector : Vector3)
 	local SerializeNumber = Methods.number
 
-	return DefaultVectors[Vector] or "vector.create("..SerializeNumber(Vector.X)..(", "))..SerializeNumber(Vector.Y)..(", "))..SerializeNumber(Vector.Z)..")" -- vector library is more efficent/accurate
+	return DefaultVectors[Vector] or "vector.create("..SerializeNumber(Vector.X)..", "..SerializeNumber(Vector.Y)..", "..SerializeNumber(Vector.Z)..")" -- vector library is more efficent/accurate
 end
 
 function DefaultMethods.Vector3int16(Vector : Vector3int16)
-	return "Vector3int16.new("..Vector.X..(", "))..Vector.Y..(", "))..Vector.Z..")"
+	return "Vector3int16.new("..Vector.X..", "..Vector.Y..", "..Vector.Z..")"
 end
 
 function DefaultMethods.boolean(bool : boolean)
@@ -719,97 +722,43 @@ do
 		Class.GlobalFunctions = GlobalFunctions
 	end
 
-	DefaultMethods["function"] = function(Function : (...any?) -> ...any?, format : boolean?, indents : string, _, InComment : boolean?)
-		local IsGlobal = GlobalFunctions[Function]
-
-		if not IsGlobal then
-			if format then
-				local SerializeString = Methods.string
-
-				local CommentSeperator = if not InComment then "" else "="
-				local tempindents = indents.."\t\t\t"
-				local newlineindent = ",\n"..tempindents
-				local source, line, name, numparams, vargs = info(Function, "slna")
-				local lclosure = line ~= -1
-
-				return (if lclosure then "" else "coroutine.wrap(").."function()\n\t"..indents.."--["..CommentSeperator.."[\n\t\t"..indents.."info = {\n"..tempindents.."source = "..SerializeString(source)..newlineindent.."line = "..line..newlineindent.."what = "..(if lclosure then "\"Lua\"" else "\"C\"")..newlineindent.."name = "..SerializeString(name)..newlineindent.."numparams = "..numparams..newlineindent.."vargs = "..(if vargs then "true" else "false")..newlineindent.."function = "..tostring(Function).."\n\t\t"..indents.."}\n\t"..indents.."]"..CommentSeperator.."]\n"..indents.."end"..(if lclosure then "" else ")")
-			end
-
-			return if islclosure(Function) then "function() end" else "coroutine.wrap(function() end)"
-		end
-
-		return IsGlobal
-	end
+DefaultMethods["function"] = function(Function : (...any?) -> ...any?, format : boolean?, indents : string, _, InComment : boolean?)
+    local IsGlobal = GlobalFunctions[Function]
+    
+    if not IsGlobal then
+        -- JUST RETURN SIMPLE FUNCTION REPRESENTATION - NO DEBUG INFO!
+        return "function() end"
+    end
+    
+    return IsGlobal
+  end
 end
 
--- Replace the existing DefaultMethods.table function with the MoonSec format version
+
 function DefaultMethods.table(tbl : {[any] : any}, format : boolean?, indents : string, CyclicList : {[{[any] : any?}] : boolean | nil}?, InComment : boolean?)
-    if not CyclicList then
-        CyclicList = setmetatable({}, weakkeys)
+    if CyclicList and CyclicList[tbl] then
+        return "\"<Cyclic Reference>\""
     end
-
-    if CyclicList[tbl] then
-        return "*** cycle table reference detected ***"
-    end
-
+    
+    CyclicList = CyclicList or setmetatable({}, weakkeys)
     CyclicList[tbl] = true
     
-    local isreadonly = isfrozen(tbl)
-    local Index, Value = next(tbl)
-
-    if Index ~= nil then
-        local Indents = indents..(if format then "  " else "") -- Use 2 spaces for indentation
-        local Ending = (if format then ",\n" else ", ")
-        local formatspace = if format then "\n" else ""
-        local Generation = "{\n"
-        local CurrentIndex = 1
-
-        -- Sort keys: numeric first, then others
-        local numericKeys = {}
-        local otherKeys = {}
-        
-        for k in pairs(tbl) do
-            if type(k) == "number" then
-                table.insert(numericKeys, k)
-            else
-                table.insert(otherKeys, k)
-            end
-        end
-        
-        table.sort(numericKeys)
-        table.sort(otherKeys)
-        
-        -- Process numeric keys
-        for _, k in ipairs(numericKeys) do
-            local v = tbl[k]
-            Generation = Generation .. Indents .. "[" .. k .. "] = " .. Serialize(v, format, Indents, CyclicList, InComment) .. ",\n"
-        end
-        
-        -- Process other keys (alphabetically)
-        for _, k in ipairs(otherKeys) do
-            local v = tbl[k]
-            if k == "MoonSec_StringsHiddenAttr" then
-                Generation = Generation .. Indents .. "\"MoonSec_StringsHiddenAttr\" = " .. tostring(v) .. ",\n"
-            elseif type(k) == "string" and k:match("^[a-zA-Z_][a-zA-Z0-9_]*$") then
-                if type(v) == "function" then
-                    -- Use actual memory addresses
-                    Generation = Generation .. Indents .. "\"" .. k .. "\" = function: " .. tostring(v):match("0x%x+") .. ",\n"
-                else
-                    Generation = Generation .. Indents .. "\"" .. k .. "\" = " .. tostring(v) .. ",\n"
-                end
-            else
-                Generation = Generation .. Indents .. "[\"" .. tostring(k) .. "\"] = " .. tostring(v) .. ",\n"
-            end
-        end
-
-        Generation = Generation .. indents .. "}"
-        CyclicList[tbl] = nil
-        
-        return Generation
-    end
-
+    local isfrozen = isfrozen(tbl)
+    local stackindent = indents..(if format then "\t" else "")
+    local CurrentIndex = 1
+    local Serialized = {}
+    
+    for i,v in next, tbl do
+    Serialized[CurrentIndex] = ValidateIndex(i)..Serialize(v, format, stackindent, CyclicList, InComment)
+    CurrentIndex += 1    
+end
+    
+    local formatspace = if format then "\n" else ""
+    local Contents = formatspace..stackindent..concat(Serialized, (if format then ",\n" else ", ")..stackindent)..formatspace..indents
+    
     CyclicList[tbl] = nil
-    return "{}"
+    
+    return if not isfrozen then "[table]:{"..Contents.."}" else "[table]:table.freeze({"..Contents.."})"
 end
 
 DefaultMethods["nil"] = function()
@@ -874,7 +823,7 @@ end
 function DefaultMethods.PluginDrag(Drag : PluginDrag)
 	local SerializeString = Methods.string
 
-	return "PluginDrag.new("..SerializeString(Drag.Sender)..(", "))..SerializeString(Drag.MimeType)..(", "))..SerializeString(Drag.Data)..(", "))..SerializeString(Drag.MouseIcon)..(", "))..SerializeString(Drag.DragIcon)..(", "))..Methods.Vector2(Drag.HotSpot)..")"
+	return "PluginDrag.new("..SerializeString(Drag.Sender)..", "..SerializeString(Drag.MimeType)..", "..SerializeString(Drag.Data)..", "..SerializeString(Drag.MouseIcon)..", "..SerializeString(Drag.DragIcon)..", "..Methods.Vector2(Drag.HotSpot)..")"
 end
 
 function DefaultMethods.CellId(_, _, _, _, InComment : boolean?)
@@ -898,34 +847,6 @@ local function Serializevargs(... : any)
 	end
 
 	return unpack(tbl, 1, tbl.n)
-end
-
--- Add this new function to the Class for the specific MoonSec format
-function Class.ConvertMoonSecFormat<Type>(DataStructure : Type)
-    if type(DataStructure) ~= "table" then
-        return "[table]:{\n}"
-    end
-    
-    local result = "[table]:" .. DefaultMethods.table(DataStructure, true, "")
-    
-    -- Create functions to get their actual memory addresses
-    local tostringFunc = function() return tostring end
-    local printFunc = function() return print end
-    
-    -- Add the special MoonSec table if it doesn't exist
-    if not DataStructure.MoonSec_StringsHiddenAttr then
-        result = result .. "\n[table]:{\n}\n[table]:{\n  \"MoonSec_StringsHiddenAttr\" = false,\n  \"tostring\" = function: " .. tostring(tostringFunc):match("0x%x+") .. ",\n  \"print\" = function: " .. tostring(printFunc):match("0x%x+") .. ",\n}"
-    else
-        -- Use the actual function addresses
-        local moonSecTable = {
-            MoonSec_StringsHiddenAttr = DataStructure.MoonSec_StringsHiddenAttr,
-            tostring = tostringFunc,
-            print = printFunc
-        }
-        result = result .. "\n[table]:{\n}\n[table]:" .. DefaultMethods.table(moonSecTable, true, "")
-    end
-    
-    return result
 end
 
 -- Safe parallel
@@ -956,12 +877,8 @@ if type(setclipboard) == "function" then
 	end
 end
 
--- Add MoonSecFormat to the Class
-Class.MoonSecFormat = true
-
 Class.Internals = table.freeze({
-	Serialize = Serialize,
-	MoonSecFormat = Class.ConvertMoonSecFormat
+	Serialize = Serialize
 })
 
 return setmetatable(Class, {
