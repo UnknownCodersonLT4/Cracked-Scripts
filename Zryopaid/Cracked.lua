@@ -1,7 +1,9 @@
 
     -- loadstring(game:HttpGet("https://pastefy.app/1iuaZFDO/raw", true))()
    -- loadstring(game:HttpGet("https://pastefy.app/1iuaZFDO/raw", true))()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/0fflineAdd1ct/CH/main/LegendsOfSpeed.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/UnknownCodersonLT4/Cracked-Scripts/refs/heads/main/Zryopaid/testingobf.luau"))()
+--loadstring(game:HttpGet("https://raw.githubusercontent.com/0fflineAdd1ct/CH/main/LegendsOfSpeed.lua"))()
+-- https://raw.githubusercontent.com/UnknownCodersonLT4/Cracked-Scripts/refs/heads/main/Zryopaid/testingobf.luau
 --loadstring(game:HttpGet("https://raw.githubusercontent.com/Bad031/Green-Eye/refs/heads/main/Gec.Forest"))()
  -- loadstring(game:HttpGet("https://raw.githubusercontent.com/Bad031/Green-Eye/refs/heads/main/Gec.Forest", true))()
 
